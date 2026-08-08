@@ -507,7 +507,9 @@
         "Antoni Gaudí nam het project in 1883 over en werkte er tot zijn dood in 1926 aan, wetend dat hij het zelf nooit af zou krijgen.",
         "De bouw loopt inmiddels meer dan 140 jaar en wordt volledig betaald met toegangskaartjes en donaties, zonder overheidsgeld.",
         "De achttien torens staan voor Jezus, Maria, de twaalf apostelen en de vier evangelisten — de Jezustoren wordt de hoogste van allemaal."
-      ]
+      ],
+      "tip": "Boek een tijdslot rond zonsondergang — dan kleurt het gebrandschilderde glas het felst naar binnen.",
+      "duration": "1,5–2 uur"
     },
     {
       "id": "sant-pau",
@@ -519,7 +521,9 @@
         "Ontworpen door Lluís Domènech i Montaner, tijdgenoot en rivaal van Gaudí, als een van de grootste jugendstilcomplexen ter wereld.",
         "Het bestaat uit tientallen losse paviljoens, met opzet zo gebouwd dat patiënten nooit ver naar buiten hoefden te lopen.",
         "Sinds 2009 is het geen ziekenhuis meer, maar een cultuur- en kennishub."
-      ]
+      ],
+      "tip": "Combineer met een wandeling over de Avinguda Gaudí, die rechtstreeks naar de Sagrada Família leidt.",
+      "duration": "45–60 min"
     },
     {
       "id": "park-guell",
@@ -531,7 +535,9 @@
         "Oorspronkelijk bedoeld als luxe woonwijk met 60 villa's — het plan mislukte commercieel en werd in 1922 een openbaar park.",
         "De golvende bank op het hoofdplein is bekleed met trencadís, gebroken keramiektegels — Gaudí's handelsmerk.",
         "Gaudí woonde er zelf jarenlang in een van de weinige gebouwde huizen, nu het Gaudí Huis Museum."
-      ]
+      ],
+      "tip": "De gratis zones buiten de afgezette Monumentale Kern zijn 's ochtends vroeg het rustigst.",
+      "duration": "1,5 uur"
     },
     {
       "id": "casa-vicens",
@@ -543,7 +549,9 @@
         "Het allereerste grote gebouw van Gaudí (1883-1885), gebouwd voor een fabrikant van bakstenen en tegels — vandaar de kleurige keramiek buiten.",
         "Geldt als een van de startpunten van de art-nouveaubeweging in heel Europa.",
         "Pas sinds 2017 voor publiek open, na eeuwenlang particulier bezit te zijn geweest."
-      ]
+      ],
+      "tip": "Kleiner en rustiger dan Casa Batlló — vaak geen wachtrij, zelfs op drukke dagen.",
+      "duration": "45 min"
     },
     {
       "id": "tibidabo",
@@ -555,7 +563,9 @@
         "Met 512 meter het hoogste punt van Barcelona — op heldere dagen is zelfs Mallorca zichtbaar.",
         "Het pretpark op de top dateert uit 1899, wat het een van de oudste nog bestaande pretparken ter wereld maakt.",
         "De funiculaire die naar boven rijdt, is meer dan een eeuw oud."
-      ]
+      ],
+      "tip": "Ga bij helder weer — dan zie je tot aan de Pyreneeën.",
+      "duration": "2–3 uur incl. funiculaire"
     },
     {
       "id": "palau-musica",
@@ -567,7 +577,9 @@
         "Concertzaal uit 1908 met een enorm glazen plafond in de vorm van een omgekeerde zon.",
         "Staat sinds 1997 op de Werelderfgoedlijst van UNESCO.",
         "Overdag is er dankzij de glas-in-loodkoepel nauwelijks kunstlicht nodig in de zaal."
-      ]
+      ],
+      "tip": "Alleen met rondleiding te bezichtigen — boek vooraf, de groepen zijn klein.",
+      "duration": "50 min (rondleiding)"
     },
     {
       "id": "casa-batllo",
@@ -579,7 +591,9 @@
         "Ook wel het \"Huis van de Beenderen\" genoemd, vanwege de skeletachtige balkons en botvormige zuilen.",
         "Het dak verbeeldt de rug van een draak, verwijzend naar de legende van Sint-Joris die het monster doorboort.",
         "Gaudí gebruikte nauwelijks rechte lijnen — zelfs de muren binnen golven mee."
-      ]
+      ],
+      "tip": "Neem de audiotour met AR — die laat zien hoe de kamers er ooit bewoond uitzagen.",
+      "duration": "1 uur"
     },
     {
       "id": "la-pedrera",
@@ -591,7 +605,9 @@
         "Het laatste woonhuis dat Gaudí ontwierp (1906-1912) — de golvende, ongeverfde gevel leverde het de bijnaam \"steengroeve\" op.",
         "De schoorstenen op het dak zijn zo beeldhouwkundig vervormd dat ze vaak worden vergeleken met gemaskerde wachters.",
         "Er zit geen enkele dragende binnenmuur in het gebouw — alles steunt op zuilen en balken, wat de indeling erg flexibel maakte."
-      ]
+      ],
+      "tip": "Het dakterras met de 'wachters'-schoorstenen is het fotogeniekst bij zonsondergang.",
+      "duration": "1 uur"
     },
     {
       "id": "font-magica",
@@ -603,7 +619,9 @@
         "Gebouwd voor de Wereldtentoonstelling van 1929, met een licht-, water- en muziekshow die tot vandaag draait.",
         "Ligt op de zichtas tussen Plaça Espanya en het MNAC.",
         "De show combineert duizenden liters water per minuut met gekleurde verlichting op muziek."
-      ]
+      ],
+      "tip": "Kom een minuut of 20 voor de show voor een goede plek vooraan.",
+      "duration": "30 min (show)"
     },
     {
       "id": "boqueria",
@@ -615,7 +633,9 @@
         "Een van de oudste en grootste overdekte markten van Europa, met wortels tot in de 13e eeuw.",
         "Trekt dagelijks duizenden bezoekers naar honderden kraampjes.",
         "Ligt aan La Rambla, op de plek waar ooit een van de stadspoorten van Barcelona stond."
-      ]
+      ],
+      "tip": "Loop door naar de kraampjes achterin, voorbij het toeristische front, voor de beste prijzen.",
+      "duration": "30–45 min"
     },
     {
       "id": "barri-gotic",
@@ -627,7 +647,9 @@
         "De wijk ligt op de fundamenten van het Romeinse Barcino — stukken van de originele stadsmuur zijn nog zichtbaar.",
         "De gotische gevel van de kathedraal is pas begin 20e eeuw toegevoegd, eeuwen na de rest van het gebouw.",
         "In de kloostertuin lopen van oudsher dertien witte ganzen rond, symbool voor de leeftijd van de martelares Santa Eulàlia."
-      ]
+      ],
+      "tip": "Verdwaal bewust in de zijstraatjes rond de kathedraal — daar zit de sfeer.",
+      "duration": "1–2 uur"
     },
     {
       "id": "torres-serranos",
@@ -639,7 +661,9 @@
         "Gebouwd eind 14e eeuw als een van twaalf stadspoorten van middeleeuws Valencia — nu een van de twee overgebleven poorten.",
         "Diende eeuwenlang als gevangenis, onder meer voor edellieden.",
         "Gold in zijn tijd als een van de mooiste stadspoorten van Europa."
-      ]
+      ],
+      "tip": "Beklim de torens voor een gratis uitzicht over de oude stad.",
+      "duration": "30 min"
     },
     {
       "id": "san-nicolas",
@@ -651,7 +675,9 @@
         "Bekend als de \"Sixtijnse Kapel van Valencia\" door het spectaculaire, volledig beschilderde plafond.",
         "Het plafond kwam pas na een jarenlange restauratie in 2016 weer in volle glorie tevoorschijn.",
         "Een van de oudste kerken van de stad, met wortels tot in de 13e eeuw."
-      ]
+      ],
+      "tip": "Ga buiten misuren, dan mag je ook de indrukwekkende plafondschilderingen fotograferen.",
+      "duration": "30 min"
     },
     {
       "id": "valencia-cathedral",
@@ -663,7 +689,9 @@
         "Zou volgens de overlevering de Heilige Graal bewaren, de kelk die Jezus bij het Laatste Avondmaal gebruikt zou hebben.",
         "De Miguelete-klokkentoren is beklimbaar via bijna 210 treden, met uitzicht over de hele oude stad.",
         "Gebouwd op de plek van een voormalige moskee, die op zijn beurt op een Romeinse tempel stond."
-      ]
+      ],
+      "tip": "Beklim de Miguelete-toren (207 treden) voor het beste uitzicht op Valencia.",
+      "duration": "1 uur incl. toren"
     },
     {
       "id": "mercado-central",
@@ -675,7 +703,9 @@
         "De Llotja de la Seda, de voormalige zijdebeurs, is een laatgotisch meesterwerk uit de 15e eeuw en UNESCO-werelderfgoed.",
         "De Mercado Central is een van de grootste overdekte versmarkten van Europa, met honderden kraampjes onder een opvallende koepel.",
         "Beide gebouwen liggen letterlijk tegenover elkaar — een verwijzing naar Valencia's rijke handelsverleden."
-      ]
+      ],
+      "tip": "Ga vóór 10 uur — na de lunch sluiten veel kramen al.",
+      "duration": "30–45 min"
     },
     {
       "id": "ciudad-artes",
@@ -687,7 +717,9 @@
         "Ontworpen door de Valenciaanse architect Santiago Calatrava, gebouwd in de voormalige bedding van de rivier de Turia.",
         "Bestaat uit meerdere futuristische gebouwen: een wetenschapsmuseum, een IMAX-bioscoop (Hemisfèric) en het Oceanogràfic.",
         "Het complex veranderde in ruim tien jaar bouwtijd het hele silhouet van de stad."
-      ]
+      ],
+      "tip": "'s Avonds verlicht zijn de gebouwen minstens zo indrukwekkend als overdag.",
+      "duration": "2+ uur (excl. musea)"
     },
     {
       "id": "oceanografic",
@@ -699,7 +731,9 @@
         "Het grootste oceanarium van Europa, ontworpen door architect Félix Candela.",
         "Herbergt tientallen ecosystemen, van de Arctische zee tot tropische riffen.",
         "Het onderwaterrestaurant ligt middenin het haaienbassin."
-      ]
+      ],
+      "tip": "De dolfijnenshow trekt de meeste mensen — begin bij de rustigere zalen zoals het Arctische gebied.",
+      "duration": "3–4 uur"
     },
     {
       "id": "catedral-sevilla",
@@ -711,7 +745,9 @@
         "De grootste gotische kathedraal ter wereld, gebouwd op de plek van de voormalige hoofdmoskee van Sevilla.",
         "Het praalgraf van Christoffel Columbus wordt gedragen door vier praalbeelden die de koninkrijken van Spanje verbeelden.",
         "De Giralda was ooit het minaret van de moskee — beklimbaar via hellingen in plaats van trappen, zodat er ooit te paard naar boven gereden kon worden."
-      ]
+      ],
+      "tip": "Combineer met de beklimming van de Giralda — geen trappen maar hellingbanen, ooit gebouwd zodat de muezzin te paard naar boven kon.",
+      "duration": "1,5 uur"
     },
     {
       "id": "real-alcazar",
@@ -723,7 +759,9 @@
         "Geldt als het oudste nog in gebruik zijnde koninklijk paleis van Europa — de Spaanse koninklijke familie verblijft er nog bij bezoeken aan Sevilla.",
         "Een mix van Moorse (mudéjar), gotische en renaissancestijlen, gebouwd en verbouwd over meer dan zeven eeuwen.",
         "Diende als filmlocatie voor de tuinen van Dorne in Game of Thrones."
-      ]
+      ],
+      "tip": "De tuinen zijn zowat net zo groot als het paleis zelf — reken extra tijd om erdoorheen te dwalen.",
+      "duration": "2–2,5 uur"
     },
     {
       "id": "casa-pilatos",
@@ -735,7 +773,9 @@
         "16e-eeuws paleis dat Andalusische (mudéjar) architectuur combineert met Italiaanse renaissance-invloeden.",
         "Zou geïnspireerd zijn op het huis van Pontius Pilatus in Jeruzalem — vandaar de naam.",
         "Bezit een van de grootste privécollecties azulejo-tegels van Sevilla."
-      ]
+      ],
+      "tip": "Veel rustiger dan het Alcázar, met minstens zo mooie tegelpatronen — een goede stop tussendoor.",
+      "duration": "45–60 min"
     },
     {
       "id": "metropol-parasol",
@@ -747,7 +787,9 @@
         "Met zijn houten constructie een van de grootste houten bouwwerken ter wereld.",
         "Gebouwd boven een archeologische vindplaats met Romeinse en Moorse resten, nu een ondergronds museum.",
         "De bijnaam \"Las Setas\" (de paddenstoelen) verwijst naar de golvende vorm."
-      ]
+      ],
+      "tip": "Het uitzichtplatform boven op de 'paddenstoelen' is los te betalen en het proberen waard bij zonsondergang.",
+      "duration": "45 min"
     },
     {
       "id": "plaza-espana",
@@ -759,7 +801,9 @@
         "Gebouwd voor de Iberoamerikaanse Tentoonstelling van 1929, in een halve cirkel die de band tussen Spanje en zijn voormalige kolonies moest verbeelden.",
         "Elke Spaanse provincie heeft een eigen betegelde nis met kaart en historisch tafereel.",
         "Diende als filmlocatie voor onder meer Star Wars: Episode II en Lawrence of Arabia."
-      ]
+      ],
+      "tip": "Zoek de tegeltableaus van je eigen (of favoriete) Spaanse provincie langs de gevel.",
+      "duration": "45 min"
     },
     {
       "id": "macarena",
@@ -771,7 +815,9 @@
         "Huisvest het beeld van de Maagd van de Macarena, een van de meest vereerde Mariabeelden van Andalusië.",
         "Tijdens de Semana Santa trekt de processie met dit beeld tot diep in de nacht duizenden mensen de straat op.",
         "Het beeld draagt vaak sieraden geschonken door bewonderaars, onder wie beroemde stierenvechters."
-      ]
+      ],
+      "tip": "Het beeld van de Virgen de la Macarena draagt echte gouden en diamanten sieraden, geschonken door bewonderaars.",
+      "duration": "30 min"
     },
     {
       "id": "torre-oro",
@@ -783,7 +829,9 @@
         "13e-eeuwse wachttoren aan de Guadalquivir, gebouwd om de rivier en scheepvaart naar Sevilla te bewaken.",
         "De naam (\"Gouden Toren\") komt mogelijk van gouden glazuurtegels die de toren ooit bedekten.",
         "Er liep ooit een ketting tussen deze toren en een tegenhanger aan de overkant om de rivier bij dreiging af te sluiten."
-      ]
+      ],
+      "tip": "Vanaf de overkant van de Guadalquivir maak je de mooiste foto van de toren.",
+      "duration": "20–30 min"
     },
     {
       "id": "alcazaba-malaga",
@@ -795,7 +843,9 @@
         "Moors fort-paleis uit de 11e eeuw, gebouwd op de fundamenten van een eerdere Romeinse vesting.",
         "Geldt als een van de best bewaarde alcazaba's van Spanje, met meerdere ringmuren en poorten.",
         "Verbonden met het hoger gelegen Castillo de Gibralfaro via een versterkte muur."
-      ]
+      ],
+      "tip": "Ga via de ingang bij het Romeinse theater — de klim erna gaat in fases met rustpunten.",
+      "duration": "1–1,5 uur"
     },
     {
       "id": "teatro-romano",
@@ -807,7 +857,9 @@
         "Romeins theater uit de 1e eeuw v.Chr., pas in 1951 herontdekt tijdens bouwwerkzaamheden.",
         "Werd eeuwenlang als bouwmateriaal-bron gebruikt voor de Moorse Alcazaba ernaast.",
         "Nog altijd deels blootgelegd, met een bezoekerscentrum over de vindplaats."
-      ]
+      ],
+      "tip": "Toegang is gratis en je loopt er zo doorheen op weg naar de Alcazaba.",
+      "duration": "15–20 min"
     },
     {
       "id": "gibralfaro",
@@ -819,7 +871,9 @@
         "Militair fort uit de 14e eeuw, gebouwd door de Moorse heersers om de Alcazaba en de haven te beschermen.",
         "Ligt op een heuvel met een van de beste panorama's over Málaga en de Middellandse Zee.",
         "De naam zou zijn afgeleid van een oude vuurtoren (\"far\"), gecombineerd met het Griekse woord voor rots."
-      ]
+      ],
+      "tip": "Zwaarder dan de Alcazaba, maar het uitzicht over haven en stierenarena is het beste van heel Málaga.",
+      "duration": "1 uur"
     },
     {
       "id": "caminito-del-rey",
@@ -831,7 +885,9 @@
         "Oorspronkelijk gebouwd in 1905 als looppad voor arbeiders van een waterkrachtcentrale, hoog langs de wanden van de Gaitanes-kloof.",
         "Was decennialang berucht als \"gevaarlijkste pad ter wereld\" nadat het in verval raakte en er dodelijke ongelukken gebeurden.",
         "Volledig gerenoveerd en in 2015 heropend met een nieuw, veilig loopnetwerk — het uitzicht bleef even spectaculair."
-      ]
+      ],
+      "tip": "Draag stevige schoenen en kom op tijd — je pendelbus en tijdslot staan vast.",
+      "duration": "3–4 uur incl. pendelbus"
     },
     {
       "id": "catedral-malaga",
@@ -843,7 +899,9 @@
         "Bekend als \"La Manquita\" (de eenarmige) omdat de zuidertoren nooit is afgebouwd — geldgebrek, deels omdat het geld naar de Amerikaanse Onafhankelijkheidsoorlog ging.",
         "Gebouwd op de plek van de vroegere hoofdmoskee van Málaga.",
         "De bouw duurde meer dan twee eeuwen, zichtbaar aan de mix van renaissance- en barokstijlen."
-      ]
+      ],
+      "tip": "Kijk goed naar de onafgebouwde zuidertoren — vandaar de bijnaam 'La Manquita'.",
+      "duration": "45–60 min"
     }
   ],
   "tickets": {
