@@ -29,14 +29,19 @@
       },
       "foodGuide": {
         "breakfast": [
-          { "name": "La Font de la Sagrera", "area": "Plaça de Masadas", "note": "Buurtcafé vlak bij het hotel — koffie en torrades zoals de locals ze eten." }
+          { "name": "El Taller", "area": "Passeig de Torras i Bages 11", "note": "Klein, goed buurtcafé met bakkerij — verse croissants en koffie." },
+          { "name": "Forn de Pa Martí Molins", "area": "Carrer de Martí Molins 48-62", "note": "Ambachtelijke bakkerij en familiebedrijf, vers brood en gebak." },
+          { "name": "Bar Colòmbia", "area": "Rambla de Fabra i Puig", "note": "Buurtbar sinds 1913 — ook prima voor een vroege koffie met iets zoets." }
         ],
         "bar": [
           { "name": "Vidorra", "area": "Carrer de Monlau 35", "note": "Vermuteria en wijnbar met vooral Catalaanse wijnen, vijf minuten van het hotel." },
-          { "name": "Casa Donos", "area": "Sant Andreu", "note": "Vermout met mosselen, kokkels en patat voor twee — buurtklassieker." }
+          { "name": "Bar Colòmbia", "area": "Rambla de Fabra i Puig", "note": "Een van de oudste kroegjes van de wijk, bekend om de berberechos met pittige saus." },
+          { "name": "Tasca i Vins", "area": "vlak bij metro La Sagrera", "note": "Beschutte, groene tapasterras vlak bij het hotel." }
         ],
         "dinner": [
-          { "name": "Bar Torrente", "area": "Sant Andreu", "note": "Tapas met een moderne twist, dicht bij het hotel." }
+          { "name": "Bar Torrente", "area": "Sant Andreu", "note": "Tapas met een moderne twist, dicht bij het hotel." },
+          { "name": "La Bodegueta de Sant Andreu", "area": "Sant Andreu", "note": "Tortilla's en croquetes, alles huisgemaakt en lokaal ingekocht." },
+          { "name": "Bar Aparici", "area": "Sant Andreu", "note": "Familiebedrijf met gezellig terras, stevige klassiekers van de dagkaart." }
         ]
       }
     },
@@ -57,15 +62,19 @@
       },
       "foodGuide": {
         "breakfast": [
-          { "name": "Alenar Bodega Mediterránea", "area": "Russafa", "note": "Populaire brunch- en ontbijtplek, hoog gewaardeerd." }
+          { "name": "Passage à Paris", "area": "Russafa", "note": "Franse bakkerij, geldt als een van de beste van Valencia — ideaal voor onderweg." },
+          { "name": "Pastisseria Monpla", "area": "Russafa", "note": "Gevierde patisserie met verfijnd gebak en vriendelijke bediening." },
+          { "name": "Dulce de Leche Pastelería", "area": "Russafa", "note": "Argentijnse bakkerij, hoge plafonds, goede koffie en jus." }
         ],
         "bar": [
           { "name": "Maui Russafa", "area": "Russafa", "note": "Bekend om huisgemaakte vermout en mini-hamburgertapas." },
-          { "name": "Bar Cremaet", "area": "Russafa", "note": "Ouderwetse buurtkroeg met de traditionele cremaet (koffie met rum, geflambeerd)." }
+          { "name": "Bar Cremaet", "area": "Russafa", "note": "Ouderwetse buurtkroeg met de traditionele cremaet (koffie met rum, geflambeerd)." },
+          { "name": "Mare Meua", "area": "Russafa", "note": "Klein tapas- en pintxosbarretje met huisgemaakte sangria." }
         ],
         "dinner": [
           { "name": "La Vendetta", "area": "Russafa", "note": "Een van de best beoordeelde adresjes van de wijk." },
-          { "name": "Canalla Bistro", "area": "Russafa", "note": "Casual bistro van chef Ricard Camarena, gedeelde gerechten." }
+          { "name": "Canalla Bistro", "area": "Russafa", "note": "Casual bistro van chef Ricard Camarena, gedeelde gerechten." },
+          { "name": "El Rodamón de Russafa", "area": "Russafa", "note": "Sfeervolle wijnbar-restaurant, populair bij locals." }
         ]
       }
     },
@@ -86,13 +95,19 @@
       },
       "foodGuide": {
         "breakfast": [
-          { "name": "Cafetería El Pilar", "area": "Marqués del Nervión", "note": "Verse gebakjes en koffie, favoriet bij de mensen uit de buurt." }
+          { "name": "Panadería Bekeray", "area": "Nervión", "note": "Kwaliteitsbakkerij, geroemd om het brood en de verse donuts." },
+          { "name": "Las Doncellas", "area": "Nervión", "note": "Buurtbakkerij, ook bekend om hartige gebakjes (dadel-spek-kaas)." },
+          { "name": "La Espiga Nervión", "area": "Nervión", "note": "Vaste bakker van de wijk, prima voor brood en zoet gebak onderweg." }
         ],
         "bar": [
-          { "name": "La Bernarda", "area": "Nervión", "note": "Drukke, goedbeoordeelde tapasbar vlak bij het station." }
+          { "name": "La Bernarda", "area": "Nervión", "note": "Drukke, goedbeoordeelde tapasbar vlak bij het station." },
+          { "name": "Taberna de Nervión", "area": "Marqués del Nervión 116", "note": "Echte buurtsfeer met een terras naast het park." },
+          { "name": "Belvedere", "area": "Cardenal Lluch / Juan de Padilla", "note": "Creatieve tapas op een zonnig of beschut terras." }
         ],
         "dinner": [
-          { "name": "Sevilla Bahía", "area": "Nervión", "note": "Vis en rijstgerechten, korte loopafstand van het hotel." }
+          { "name": "Sevilla Bahía", "area": "Nervión", "note": "Vis en rijstgerechten, korte loopafstand van het hotel." },
+          { "name": "Panrallao", "area": "Nervión", "note": "Populaire tapas, geliefd bij de buurtbewoners." },
+          { "name": "La Flor de la Canela", "area": "Nervión", "note": "Andalusische keuken met Peruaanse invloeden." }
         ]
       }
     },
@@ -113,13 +128,19 @@
       },
       "foodGuide": {
         "breakfast": [
-          { "name": "Casa Aranda", "area": "bij Mercado Atarazanas", "note": "Historische churrería — hét ontbijtadres van Málaga sinds 1932." }
+          { "name": "Casa Aranda", "area": "bij Mercado Atarazanas", "note": "Historische churrería — hét ontbijtadres van Málaga sinds 1932." },
+          { "name": "Pastelería L'abadi", "area": "La Merced", "note": "Franse bakkerij, hoog gewaardeerd om het gebak." },
+          { "name": "La Canasta", "area": "meerdere plekken in het centrum", "note": "Bakkerijketen — van tostada met tomaat tot vers gebak." }
         ],
         "bar": [
-          { "name": "El Pimpi", "area": "Centro, bij de kathedraal", "note": "Instituut met wijnkelders vol flamenco- en stierenvechtaffiches." }
+          { "name": "El Pimpi", "area": "Centro, bij de kathedraal", "note": "Instituut met wijnkelders vol flamenco- en stierenvechtaffiches." },
+          { "name": "Bar La Tranca", "area": "La Merced", "note": "Ouderwetse kroeg met vermout, zoete wijn en huisgemaakte tapas." },
+          { "name": "La Farola de Orellana", "area": "vlak bij Calle Larios", "note": "Klein en authentiek, ongewijzigd sinds 1938." }
         ],
         "dinner": [
-          { "name": "Casa Lola Strachan", "area": "Plaza de las Flores", "note": "Moderne tapas op een van de leukste pleintjes van het centrum." }
+          { "name": "Casa Lola Strachan", "area": "Plaza de las Flores", "note": "Moderne tapas op een van de leukste pleintjes van het centrum." },
+          { "name": "El Tapeo de Cervantes", "area": "Centro", "note": "Sfeervol en gezellig, sterk in vis- en vleestapas met een goede wijnkaart." },
+          { "name": "Toro Muelle Uno", "area": "Muelle Uno", "note": "Aan de haven, mooi voor een avond met uitzicht op het water." }
         ]
       }
     }
