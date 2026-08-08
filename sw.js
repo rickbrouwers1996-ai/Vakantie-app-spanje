@@ -1,4 +1,4 @@
-const CACHE = "spanje-2026-v1";
+const CACHE = "spanje-2026-v2";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -9,6 +9,9 @@ const PRECACHE = [
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/apple-touch-icon.png",
+  "./images/breakfast.png",
+  "./images/bar.png",
+  "./images/dinner.png",
 ];
 
 self.addEventListener("install", (event) => {
