@@ -188,7 +188,7 @@
 
   function foodGuideSection(fg) {
     const groups = [
-      { key: "breakfast", label: "Ontbijt bij het hotel", img: "images/breakfast.png", items: fg.breakfast },
+      { key: "breakfast", label: "Ontbijt — bakkerijen", img: "images/breakfast.png", items: fg.breakfast },
       { key: "bar", label: "Borrelen in de buurt", img: "images/bar.png", items: fg.bar },
       { key: "dinner", label: "Diner in de buurt", img: "images/dinner.png", items: fg.dinner },
     ];
@@ -197,17 +197,18 @@
         <div class="food-group-head">
           <img class="food-group-img" src="${g.img}" alt="" loading="lazy" />
           <div class="food-group-label">${esc(g.label)}</div>
+          <div class="food-group-count">${g.items.length}</div>
         </div>
-        ${g.items.map((it) => `
-          <a class="food-item" href="${mapsOpenUrl([it.name + ", " + it.area])}" target="_blank" rel="noopener">
-            <div class="food-item-main">
-              <div class="food-item-name">${esc(it.name)}</div>
-              <div class="food-item-area">${esc(it.area)}</div>
-              <div class="food-item-note">${esc(it.note)}</div>
-            </div>
-            <div class="food-item-chevron">↗</div>
-          </a>
-        `).join("")}
+        <div class="food-scroll">
+          ${g.items.map((it) => `
+            <a class="food-card" href="${mapsOpenUrl([it.name + ", " + it.area])}" target="_blank" rel="noopener">
+              <div class="food-card-name">${esc(it.name)}</div>
+              <div class="food-card-area">${esc(it.area)}</div>
+              <div class="food-card-note">${esc(it.note)}</div>
+              <div class="food-card-link">Open in Maps ↗</div>
+            </a>
+          `).join("")}
+        </div>
       </div>
     `).join("");
   }
@@ -228,6 +229,52 @@
           ${foodGuideSection(c.foodGuide)}
         </section>
       `).join("")}
+    `;
+  }
+
+  const HIGHLIGHT_ICON_IMG = {
+    church: "images/highlights/church.png",
+    gaudi: "images/highlights/gaudi.png",
+    fortress: "images/highlights/fortress.png",
+    plaza: "images/highlights/plaza.png",
+    water: "images/highlights/water.png",
+    nature: "images/highlights/nature.png",
+    culture: "images/highlights/culture.png",
+  };
+
+  function viewHighlights() {
+    const cities = [...DATA.cities].sort((a, b) => a.order - b.order);
+    return `
+      ${header({ title: "Highlights", sub: `${DATA.highlights.length} bezienswaardigheden met achtergrondverhaal`, plain: true })}
+      <section class="section" style="padding-top:18px;">
+        <p class="section-desc">Een paar weetjes bij elke grote stop. De foto's zijn — net als bij Eten &amp; drinken — sfeerillustraties per type bezienswaardigheid, geen echte foto's van de plek zelf.</p>
+      </section>
+      ${cities.map((c) => {
+        const items = DATA.highlights.filter((h) => h.city === c.id);
+        if (!items.length) return "";
+        return `
+        <section class="section" style="padding-top:6px;">
+          <div class="section-title">${esc(c.name)}</div>
+          ${items.map(highlightCard).join("")}
+        </section>`;
+      }).join("")}
+    `;
+  }
+
+  function highlightCard(h) {
+    const img = h.photo || HIGHLIGHT_ICON_IMG[h.icon] || HIGHLIGHT_ICON_IMG.plaza;
+    const day = dayById(h.date);
+    return `
+      <div class="highlight-card">
+        <img class="highlight-card-img" src="${img}" alt="" loading="lazy" />
+        <div class="highlight-card-body">
+          <div class="highlight-card-name">${esc(h.name)}</div>
+          <ul class="highlight-card-facts">
+            ${h.facts.map((f) => `<li>${esc(f)}</li>`).join("")}
+          </ul>
+          ${day ? `<a class="highlight-card-day" href="#/dag/${h.date}">Bezocht op ${esc(day.weekday.toLowerCase())} ${dayNum(h.date)} ${esc(shortMonth(h.date))} →</a>` : ""}
+        </div>
+      </div>
     `;
   }
 
@@ -457,6 +504,9 @@
         break;
       case "eten":
         html = viewEten(arg);
+        break;
+      case "highlights":
+        html = viewHighlights();
         break;
       case "dag":
         html = viewDay(arg);
