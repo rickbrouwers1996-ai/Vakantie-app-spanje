@@ -123,8 +123,8 @@
         <div class="stat-grid">
           <div class="stat-card"><div class="stat-num">${DATA.meta.stats.days}</div><div class="stat-label">dagen</div></div>
           <div class="stat-card"><div class="stat-num">${DATA.meta.stats.cities}</div><div class="stat-label">steden</div></div>
+          <div class="stat-card"><div class="stat-num">${DATA.meta.stats.hotels}</div><div class="stat-label">hotels</div></div>
           <div class="stat-card"><div class="stat-num">${DATA.meta.stats.freeMoments}</div><div class="stat-label">gratis momenten</div></div>
-          <div class="stat-card"><div class="stat-num">${esc(DATA.meta.stats.saved)}</div><div class="stat-label">bespaard</div></div>
         </div>
       </section>
       <section class="section">
@@ -156,14 +156,65 @@
     const c = cityById(id);
     if (!c) return viewNotFound();
     const days = c.days.map(dayById);
+    const h = c.hotel;
+    const hotelMapUrl = h ? mapsOpenUrl([h.place]) : null;
     return `
-      ${header({ title: c.name, sub: `${c.nights} nachten · ${c.priceRange}`, back: "#/" })}
+      ${header({ title: c.name, sub: `${c.nights} nachten`, back: "#/" })}
       <section class="section" style="padding-top:18px;">
         <p class="section-desc">${esc(c.description)}</p>
       </section>
+
+      ${h ? `
+      <section class="section" style="padding-top:0;">
+        <div class="section-title">Hotel</div>
+        <a class="hotel-card" href="${hotelMapUrl}" target="_blank" rel="noopener">
+          <div class="hotel-card-icon">🏨</div>
+          <div class="hotel-card-body">
+            <div class="hotel-card-name">${esc(h.name)}</div>
+            <div class="hotel-card-area">${esc(h.neighborhood)}</div>
+          </div>
+          <div class="hotel-card-chevron">↗</div>
+        </a>
+        ${h.note ? `<p class="hotel-note">${esc(h.note)}</p>` : ""}
+      </section>` : ""}
+
+      ${c.foodGuide ? foodGuideSection(c.foodGuide) : ""}
+
       <section class="section" style="padding-top:0;">
         <div class="day-group-label">Dagen</div>
         ${days.map(dayRow).join("")}
+      </section>
+    `;
+  }
+
+  function foodGuideSection(fg) {
+    const groups = [
+      { key: "breakfast", label: "Ontbijt bij het hotel", img: "images/breakfast.png", items: fg.breakfast },
+      { key: "bar", label: "Borrelen in de buurt", img: "images/bar.png", items: fg.bar },
+      { key: "dinner", label: "Diner in de buurt", img: "images/dinner.png", items: fg.dinner },
+    ];
+    return `
+      <section class="section" style="padding-top:0;">
+        <div class="section-title">Eten &amp; drinken rond het hotel</div>
+        <p class="section-desc">Sfeerbeelden per categorie — geen foto's van de zaken zelf, wel echte adressen op basis van lokale aanbevelingen.</p>
+        ${groups.filter((g) => g.items && g.items.length).map((g) => `
+          <div class="food-group">
+            <div class="food-group-head">
+              <img class="food-group-img" src="${g.img}" alt="" loading="lazy" />
+              <div class="food-group-label">${esc(g.label)}</div>
+            </div>
+            ${g.items.map((it) => `
+              <a class="food-item" href="${mapsOpenUrl([it.name + ", " + it.area])}" target="_blank" rel="noopener">
+                <div class="food-item-main">
+                  <div class="food-item-name">${esc(it.name)}</div>
+                  <div class="food-item-area">${esc(it.area)}</div>
+                  <div class="food-item-note">${esc(it.note)}</div>
+                </div>
+                <div class="food-item-chevron">↗</div>
+              </a>
+            `).join("")}
+          </div>
+        `).join("")}
       </section>
     `;
   }
@@ -182,7 +233,6 @@
           <div class="day-row-title">${esc(d.title)}${isToday ? '<span class="today-badge">Vandaag</span>' : ""}</div>
           <div class="day-row-sub">${esc(d.weekday)} · ${esc(city ? city.name : "")}</div>
         </div>
-        <div class="day-row-cost">${esc(d.cost || "")}</div>
         <div class="day-row-chevron">›</div>
       </a>`;
   }
@@ -222,13 +272,13 @@
 
   function stopHtml(s, isLast) {
     return `
-      <div class="stop ${s.transit ? "is-transit" : ""}">
+      <div class="stop ${s.transit ? "is-transit" : ""} ${s.hotel ? "is-hotel" : ""}">
         <div class="stop-rail">
           <div class="stop-dot"></div>
           ${isLast ? "" : '<div class="stop-line"></div>'}
         </div>
         <div class="stop-body">
-          <div class="stop-time">${esc(s.time)}</div>
+          <div class="stop-time">${s.hotel ? "🏨 Hotel" : esc(s.time)}</div>
           <div class="stop-name">${esc(s.name)}</div>
           ${s.detail ? `<div class="stop-detail">${esc(s.detail)}</div>` : ""}
           ${s.transit ? '<div class="stop-transit-tag">Onderweg tussen steden</div>' : ""}
@@ -256,7 +306,6 @@
         </div>
         <div class="day-hero-meta">
           <span class="meta-chip">📍 ${esc(d.distance)}</span>
-          <span class="meta-chip cost">💶 ${esc(d.cost)}</span>
         </div>
       </header>
 
@@ -275,7 +324,19 @@
         <div class="map-card-sub" style="padding-top:0;">Laadt de kaart hierboven niet? De knop opent de route altijd, ook offline gepland.</div>
       </div>` : ""}
 
-      <p class="footnote">Kaart is een indicatie op basis van de genoemde plekken — check actuele reistijden in Google Maps zelf.</p>
+      ${d.dinnerTip ? `
+      <div class="dinner-tip-card">
+        <img class="dinner-tip-img" src="images/dinner.png" alt="" loading="lazy" />
+        <div class="dinner-tip-body">
+          <div class="dinner-tip-kicker">Etentip voor vanavond</div>
+          <div class="dinner-tip-name">${esc(d.dinnerTip.name)}</div>
+          <div class="dinner-tip-area">${esc(d.dinnerTip.area)}</div>
+          <div class="dinner-tip-note">${esc(d.dinnerTip.note)}</div>
+          <a class="dinner-tip-link" href="${mapsOpenUrl([d.dinnerTip.name + ", " + d.dinnerTip.area])}" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        </div>
+      </div>` : ""}
+
+      <p class="footnote">Kaart is een indicatie op basis van de genoemde plekken — check actuele reistijden in Google Maps zelf. Restaurant- en baradressen zijn aanbevelingen op basis van recente lokale bronnen, geen persoonlijke bezoeken — check openingstijden vooraf.</p>
     `;
   }
 
@@ -339,33 +400,6 @@
     `;
   }
 
-  function viewCosts() {
-    const c = DATA.costs;
-    return `
-      ${header({ title: "Kosten", sub: c.note, plain: true })}
-      <section class="cost-hero" style="margin-top:18px;">
-        <div class="cost-tile total"><div class="num">${esc(c.totalRange)}</div><div class="lbl">entreegelden, 2 pers.</div></div>
-        <div class="cost-tile saved"><div class="num">${esc(c.saved)}</div><div class="lbl">bespaard</div></div>
-        <div class="cost-tile"><div class="num">${esc(c.withoutFree)}</div><div class="lbl">zonder gratis momenten</div></div>
-      </section>
-
-      <section class="section">
-        <div class="section-title">Waar het geld heen gaat</div>
-        ${c.paid.map((r) => `
-          <div class="cost-list-row"><span>${esc(r.name)}</span><span class="amt">${esc(r.price)}</span></div>
-        `).join("")}
-      </section>
-
-      <section class="section">
-        <div class="section-title">Wat jullie gratis binnenkomen</div>
-        ${c.free.map((r) => `
-          <div class="cost-list-row free"><span>${esc(r.name)}</span><span class="amt">${esc(r.price)}</span></div>
-        `).join("")}
-      </section>
-      <p class="footnote">${esc(c.footnote)}</p>
-    `;
-  }
-
   function viewTips() {
     const w = DATA.warnings;
     return `
@@ -419,9 +453,6 @@
         break;
       case "tickets":
         html = viewTickets();
-        break;
-      case "kosten":
-        html = viewCosts();
         break;
       case "tips":
         html = viewTips();
