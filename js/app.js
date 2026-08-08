@@ -176,9 +176,8 @@
           <div class="hotel-card-chevron">↗</div>
         </a>
         ${h.note ? `<p class="hotel-note">${esc(h.note)}</p>` : ""}
+        ${c.foodGuide ? `<a href="#/eten/${c.id}" class="hotel-food-link">🍽️ Eten &amp; drinken bij dit hotel →</a>` : ""}
       </section>` : ""}
-
-      ${c.foodGuide ? foodGuideSection(c.foodGuide) : ""}
 
       <section class="section" style="padding-top:0;">
         <div class="day-group-label">Dagen</div>
@@ -193,29 +192,42 @@
       { key: "bar", label: "Borrelen in de buurt", img: "images/bar.png", items: fg.bar },
       { key: "dinner", label: "Diner in de buurt", img: "images/dinner.png", items: fg.dinner },
     ];
-    return `
-      <section class="section" style="padding-top:0;">
-        <div class="section-title">Eten &amp; drinken rond het hotel</div>
-        <p class="section-desc">Sfeerbeelden per categorie — geen foto's van de zaken zelf, wel echte adressen op basis van lokale aanbevelingen.</p>
-        ${groups.filter((g) => g.items && g.items.length).map((g) => `
-          <div class="food-group">
-            <div class="food-group-head">
-              <img class="food-group-img" src="${g.img}" alt="" loading="lazy" />
-              <div class="food-group-label">${esc(g.label)}</div>
+    return groups.filter((g) => g.items && g.items.length).map((g) => `
+      <div class="food-group">
+        <div class="food-group-head">
+          <img class="food-group-img" src="${g.img}" alt="" loading="lazy" />
+          <div class="food-group-label">${esc(g.label)}</div>
+        </div>
+        ${g.items.map((it) => `
+          <a class="food-item" href="${mapsOpenUrl([it.name + ", " + it.area])}" target="_blank" rel="noopener">
+            <div class="food-item-main">
+              <div class="food-item-name">${esc(it.name)}</div>
+              <div class="food-item-area">${esc(it.area)}</div>
+              <div class="food-item-note">${esc(it.note)}</div>
             </div>
-            ${g.items.map((it) => `
-              <a class="food-item" href="${mapsOpenUrl([it.name + ", " + it.area])}" target="_blank" rel="noopener">
-                <div class="food-item-main">
-                  <div class="food-item-name">${esc(it.name)}</div>
-                  <div class="food-item-area">${esc(it.area)}</div>
-                  <div class="food-item-note">${esc(it.note)}</div>
-                </div>
-                <div class="food-item-chevron">↗</div>
-              </a>
-            `).join("")}
-          </div>
+            <div class="food-item-chevron">↗</div>
+          </a>
         `).join("")}
+      </div>
+    `).join("");
+  }
+
+  function viewEten(focusCityId) {
+    const cities = [...DATA.cities].sort((a, b) => a.order - b.order).filter((c) => c.foodGuide);
+    return `
+      ${header({ title: "Eten & drinken", sub: "Ontbijt, borrel en diner rond elk hotel", plain: true })}
+      <section class="section" style="padding-top:18px;">
+        <p class="section-desc">Sfeerillustraties per categorie — geen foto's van de zaken zelf, wel echte adressen op basis van actuele lokale aanbevelingen. Check openingstijden vooraf.</p>
       </section>
+      ${cities.map((c) => `
+        <section class="section eten-city-section" id="stad-${c.id}" style="padding-top:6px;">
+          <div class="eten-city-head">
+            <div class="section-title" style="margin-bottom:0;">${esc(c.name)}</div>
+            ${c.hotel ? `<div class="eten-city-hotel">🏨 ${esc(c.hotel.name)}</div>` : ""}
+          </div>
+          ${foodGuideSection(c.foodGuide)}
+        </section>
+      `).join("")}
     `;
   }
 
@@ -443,6 +455,9 @@
       case "dagen":
         html = viewDaysList();
         break;
+      case "eten":
+        html = viewEten(arg);
+        break;
       case "dag":
         html = viewDay(arg);
         tabRoute = "dagen";
@@ -461,7 +476,16 @@
         html = viewNotFound();
     }
     app.innerHTML = html;
-    window.scrollTo(0, 0);
+    if (seg === "eten" && arg) {
+      const target = document.getElementById(`stad-${arg}`);
+      if (target) {
+        target.scrollIntoView({ block: "start" });
+      } else {
+        window.scrollTo(0, 0);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
     updateTabbar(tabRoute);
   }
 

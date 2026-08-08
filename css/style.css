@@ -384,6 +384,18 @@ button { font: inherit; }
   border-radius: 10px; padding: 10px 12px; margin: 10px 0 0; line-height: 1.5;
 }
 @media (prefers-color-scheme: dark) { .hotel-note { color: #e88a6b; background: rgba(196,84,55,0.14); } }
+.hotel-food-link {
+  display: block; margin-top: 12px; font-size: 13.5px; font-weight: 700;
+  color: var(--teal-800);
+}
+@media (prefers-color-scheme: dark) { .hotel-food-link { color: var(--sand); } }
+
+.eten-city-section { scroll-margin-top: 70px; }
+.eten-city-section:not(:first-of-type) {
+  margin-top: 6px; padding-top: 22px; border-top: 1px solid var(--border);
+}
+.eten-city-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.eten-city-hotel { font-size: 12px; color: var(--text-muted); }
 
 /* ---------- Food guide ---------- */
 .food-group { margin-bottom: 18px; }
