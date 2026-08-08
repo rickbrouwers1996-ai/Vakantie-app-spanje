@@ -255,16 +255,170 @@
     const img = h.photo || `images/highlights/${h.id}.png`;
     const day = dayById(h.date);
     return `
-      <div class="highlight-card">
+      <a class="highlight-card" href="#/highlight/${h.id}">
         <img class="highlight-card-img" src="${img}" alt="" loading="lazy" />
         <div class="highlight-card-body">
           <div class="highlight-card-name">${esc(h.name)}</div>
           <ul class="highlight-card-facts">
-            ${h.facts.map((f) => `<li>${esc(f)}</li>`).join("")}
+            ${h.facts.slice(0, 2).map((f) => `<li>${esc(f)}</li>`).join("")}
           </ul>
-          ${day ? `<a class="highlight-card-day" href="#/dag/${h.date}">Bezocht op ${esc(day.weekday.toLowerCase())} ${dayNum(h.date)} ${esc(shortMonth(h.date))} →</a>` : ""}
+          <div class="highlight-card-day">${day ? `Bezocht op ${esc(day.weekday.toLowerCase())} ${dayNum(h.date)} ${esc(shortMonth(h.date))}` : ""} · Meer weetjes →</div>
         </div>
-      </div>
+      </a>
+    `;
+  }
+
+  // ---------------- highlight hero animations ----------------
+  const SCENE_CONFIG = {
+    "sagrada-familia": ["rays", "bird"],
+    "sant-pau": ["tiles", "sparkle"],
+    "park-guell": ["tiles", "sparkle"],
+    "casa-vicens": ["tiles", "sparkle"],
+    "tibidabo": ["cloud", "bird"],
+    "palau-musica": ["sparkle", "glow"],
+    "casa-batllo": ["tiles", "sparkle"],
+    "la-pedrera": ["cloud", "bird"],
+    "font-magica": ["wave", "sparkle"],
+    "boqueria": ["sparkle", "dust"],
+    "barri-gotic": ["bird", "dust"],
+    "torres-serranos": ["flag", "bird"],
+    "san-nicolas": ["rays", "sparkle"],
+    "valencia-cathedral": ["bird", "rays"],
+    "mercado-central": ["sparkle", "dust"],
+    "ciudad-artes": ["glow", "tiles"],
+    "oceanografic": ["wave", "bubble"],
+    "catedral-sevilla": ["rays", "bird"],
+    "real-alcazar": ["tiles", "cloud"],
+    "casa-pilatos": ["tiles", "dust"],
+    "metropol-parasol": ["glow", "tiles"],
+    "plaza-espana": ["tiles", "wave"],
+    "macarena": ["sparkle", "rays"],
+    "torre-oro": ["wave", "sparkle"],
+    "alcazaba-malaga": ["flag", "dust"],
+    "teatro-romano": ["dust", "rays"],
+    "gibralfaro": ["flag", "cloud"],
+    "caminito-del-rey": ["cloud", "bird"],
+    "catedral-malaga": ["rays", "bird"],
+  };
+
+  function hashStr(s) {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+    return h >>> 0;
+  }
+
+  function makeRand(seed) {
+    let s = seed % 2147483647 || 1;
+    return () => {
+      s = (s * 48271) % 2147483647;
+      return (s - 1) / 2147483646;
+    };
+  }
+
+  function sceneElements(kind, rand) {
+    const n1 = (min, span) => min + Math.floor(rand() * span);
+    const f1 = (min, span) => min + rand() * span;
+    let out = "";
+    switch (kind) {
+      case "bird": {
+        const n = n1(2, 2);
+        for (let i = 0; i < n; i++) {
+          out += `<svg class="scene-el bird" style="top:${f1(10, 42).toFixed(1)}%; animation-duration:${f1(9, 6).toFixed(1)}s; animation-delay:-${f1(0, 8).toFixed(1)}s;" viewBox="0 0 16 8"><path d="M0 4 Q4 0 8 4 Q12 0 16 4" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+        }
+        return out;
+      }
+      case "sparkle": {
+        const n = n1(6, 4);
+        for (let i = 0; i < n; i++) {
+          const size = f1(3, 3);
+          out += `<span class="scene-el sparkle" style="top:${f1(6, 78).toFixed(1)}%; left:${f1(4, 92).toFixed(1)}%; width:${size.toFixed(1)}px; height:${size.toFixed(1)}px; animation-duration:${f1(1.8, 2).toFixed(1)}s; animation-delay:-${f1(0, 3).toFixed(1)}s;"></span>`;
+        }
+        return out;
+      }
+      case "dust": {
+        const n = n1(7, 5);
+        for (let i = 0; i < n; i++) {
+          out += `<span class="scene-el dust" style="left:${f1(4, 92).toFixed(1)}%; animation-duration:${f1(5, 4).toFixed(1)}s; animation-delay:-${f1(0, 6).toFixed(1)}s;"></span>`;
+        }
+        return out;
+      }
+      case "bubble": {
+        const n = n1(7, 5);
+        for (let i = 0; i < n; i++) {
+          const size = f1(5, 6);
+          out += `<span class="scene-el bubble" style="left:${f1(4, 92).toFixed(1)}%; width:${size.toFixed(1)}px; height:${size.toFixed(1)}px; animation-duration:${f1(4, 4).toFixed(1)}s; animation-delay:-${f1(0, 6).toFixed(1)}s;"></span>`;
+        }
+        return out;
+      }
+      case "cloud": {
+        const n = n1(2, 2);
+        for (let i = 0; i < n; i++) {
+          const w = f1(60, 50);
+          out += `<span class="scene-el cloud" style="top:${f1(6, 30).toFixed(1)}%; width:${w.toFixed(0)}px; height:${(w * 0.4).toFixed(0)}px; animation-duration:${f1(20, 14).toFixed(1)}s; animation-delay:-${f1(0, 20).toFixed(1)}s;"></span>`;
+        }
+        return out;
+      }
+      case "flag": {
+        const n = n1(2, 2);
+        for (let i = 0; i < n; i++) {
+          out += `<span class="scene-el flag" style="top:${f1(8, 18).toFixed(1)}%; left:${f1(15, 70).toFixed(1)}%; animation-duration:${f1(1.8, 1.2).toFixed(1)}s; animation-delay:-${f1(0, 2).toFixed(1)}s;"></span>`;
+        }
+        return out;
+      }
+      case "rays":
+        return `<span class="scene-el rays" style="animation-duration:${f1(40, 20).toFixed(0)}s;"></span>`;
+      case "tiles":
+        return `<span class="scene-el tiles" style="--shimmer-dur:${f1(2.8, 1.6).toFixed(1)}s;"></span>`;
+      case "glow":
+        return `<span class="scene-el glow" style="animation-duration:${f1(2.6, 1.2).toFixed(1)}s;"></span>`;
+      case "wave":
+        return `<span class="scene-el wave-wrap"><svg class="wave-svg" style="animation-duration:${f1(7, 5).toFixed(1)}s;" viewBox="0 0 800 40" preserveAspectRatio="none"><path d="M0 20 C 50 0, 150 0, 200 20 C 250 40, 350 40, 400 20 C 450 0, 550 0, 600 20 C 650 40, 750 40, 800 20 L800 40 L0 40 Z" fill="rgba(255,255,255,.3)"/></svg></span>`;
+      default:
+        return "";
+    }
+  }
+
+  function renderScene(h) {
+    const kinds = SCENE_CONFIG[h.id] || ["sparkle", "dust"];
+    const rand = makeRand(hashStr(h.id));
+    const img = h.photo || `images/highlights/${h.id}.png`;
+    const parts = kinds.map((k) => sceneElements(k, rand)).join("");
+    return `
+      <div class="hero-scene" style="background-image:url('${img}')">
+        ${parts}
+        <div class="scene-shade"></div>
+      </div>`;
+  }
+
+  function viewHighlightDetail(id) {
+    const h = DATA.highlights.find((x) => x.id === id);
+    if (!h) return viewNotFound();
+    const city = cityById(h.city);
+    const day = dayById(h.date);
+    return `
+      ${header({ title: h.name, sub: city ? city.name : "", back: "#/highlights" })}
+      <section class="section" style="padding-top:18px;">
+        ${renderScene(h)}
+        <div class="hl-meta-row">
+          ${city ? `<span class="hl-chip">${esc(city.name)}</span>` : ""}
+          ${day ? `<a href="#/dag/${h.date}" class="hl-chip hl-chip-link">${esc(day.weekday)} ${dayNum(h.date)} ${esc(shortMonth(h.date))} →</a>` : ""}
+        </div>
+      </section>
+      <section class="section" style="padding-top:4px;">
+        <div class="info-card hl-tip-card">
+          <div class="hl-tip-top">
+            <h3>💡 Tip</h3>
+            <span class="hl-duration">⏱ ${esc(h.duration)}</span>
+          </div>
+          <p>${esc(h.tip)}</p>
+        </div>
+      </section>
+      <section class="section" style="padding-top:4px;">
+        <div class="section-title">Weetjes</div>
+        <ul class="hl-facts-list">
+          ${h.facts.map((f) => `<li>${esc(f)}</li>`).join("")}
+        </ul>
+      </section>
     `;
   }
 
@@ -481,6 +635,10 @@
         break;
       case "highlights":
         html = viewHighlights();
+        break;
+      case "highlight":
+        html = viewHighlightDetail(arg);
+        tabRoute = "highlights";
         break;
       case "dag":
         html = viewDay(arg);

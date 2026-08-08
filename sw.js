@@ -1,4 +1,4 @@
-const CACHE = "spanje-2026-v5";
+const CACHE = "spanje-2026-v6";
 const PRECACHE = [
   "./",
   "./index.html",
