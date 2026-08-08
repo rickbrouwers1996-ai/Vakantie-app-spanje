@@ -323,7 +323,12 @@
       case "bird": {
         const n = n1(2, 2);
         for (let i = 0; i < n; i++) {
-          out += `<svg class="scene-el bird" style="top:${f1(10, 42).toFixed(1)}%; animation-duration:${f1(9, 6).toFixed(1)}s; animation-delay:-${f1(0, 8).toFixed(1)}s;" viewBox="0 0 16 8"><path d="M0 4 Q4 0 8 4 Q12 0 16 4" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+          const flapDur = f1(0.32, 0.24).toFixed(2);
+          const flapDelay = f1(0, 0.3).toFixed(2);
+          out += `<svg class="scene-el bird" style="top:${f1(10, 42).toFixed(1)}%; animation-duration:${f1(9, 6).toFixed(1)}s; animation-delay:-${f1(0, 8).toFixed(1)}s;" viewBox="0 0 22 13">
+            <g class="bird-wing" style="animation-duration:${flapDur}s; animation-delay:-${flapDelay}s;"><path d="M11 6 Q4 -1 0 4" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linecap="round"/></g>
+            <g class="bird-wing" style="animation-duration:${flapDur}s; animation-delay:-${flapDelay}s;"><path d="M11 6 Q18 -1 22 4" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linecap="round"/></g>
+          </svg>`;
         }
         return out;
       }
@@ -361,7 +366,7 @@
       case "flag": {
         const n = n1(2, 2);
         for (let i = 0; i < n; i++) {
-          out += `<span class="scene-el flag" style="top:${f1(8, 18).toFixed(1)}%; left:${f1(15, 70).toFixed(1)}%; animation-duration:${f1(1.8, 1.2).toFixed(1)}s; animation-delay:-${f1(0, 2).toFixed(1)}s;"></span>`;
+          out += `<span class="scene-el flag-wrap" style="top:${f1(8, 18).toFixed(1)}%; left:${f1(15, 70).toFixed(1)}%; animation-duration:${f1(1.8, 1.2).toFixed(1)}s; animation-delay:-${f1(0, 2).toFixed(1)}s;"><span class="flag-pole"></span><span class="flag"></span></span>`;
         }
         return out;
       }
@@ -371,8 +376,13 @@
         return `<span class="scene-el tiles" style="--shimmer-dur:${f1(2.8, 1.6).toFixed(1)}s;"></span>`;
       case "glow":
         return `<span class="scene-el glow" style="animation-duration:${f1(2.6, 1.2).toFixed(1)}s;"></span>`;
-      case "wave":
-        return `<span class="scene-el wave-wrap"><svg class="wave-svg" style="animation-duration:${f1(7, 5).toFixed(1)}s;" viewBox="0 0 800 40" preserveAspectRatio="none"><path d="M0 20 C 50 0, 150 0, 200 20 C 250 40, 350 40, 400 20 C 450 0, 550 0, 600 20 C 650 40, 750 40, 800 20 L800 40 L0 40 Z" fill="rgba(255,255,255,.3)"/></svg></span>`;
+      case "wave": {
+        const path = "M0 22 C 50 2, 150 2, 200 22 C 250 42, 350 42, 400 22 C 450 2, 550 2, 600 22 C 650 42, 750 42, 800 22 L800 40 L0 40 Z";
+        return `<span class="scene-el wave-wrap">
+          <svg class="wave-svg wave-back" style="animation-duration:${f1(11, 6).toFixed(1)}s;" viewBox="0 0 800 40" preserveAspectRatio="none"><path d="${path}" fill="#fff"/></svg>
+          <svg class="wave-svg wave-front" style="animation-duration:${f1(6, 4).toFixed(1)}s;" viewBox="0 0 800 40" preserveAspectRatio="none"><path d="${path}" fill="#fff"/></svg>
+        </span>`;
+      }
       default:
         return "";
     }
@@ -383,9 +393,13 @@
     const rand = makeRand(hashStr(h.id));
     const img = h.photo || `images/highlights/${h.id}.png`;
     const parts = kinds.map((k) => sceneElements(k, rand)).join("");
+    const kbDur = (17 + rand() * 9).toFixed(1);
+    const kbX = ((rand() > 0.5 ? -1 : 1) * (1.5 + rand() * 2)).toFixed(1);
+    const kbY = ((rand() > 0.5 ? -1 : 1) * (1.5 + rand() * 2)).toFixed(1);
     return `
-      <div class="hero-scene" style="background-image:url('${img}')">
-        ${parts}
+      <div class="hero-scene">
+        <div class="hero-scene-img" style="background-image:url('${img}'); animation-duration:${kbDur}s; --kb-x:${kbX}%; --kb-y:${kbY}%;"></div>
+        <div class="scene-overlay">${parts}</div>
         <div class="scene-shade"></div>
       </div>`;
   }
