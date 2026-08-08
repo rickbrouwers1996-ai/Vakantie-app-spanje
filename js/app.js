@@ -268,151 +268,16 @@
     `;
   }
 
-  // ---------------- highlight hero animations ----------------
-  const SCENE_CONFIG = {
-    "sagrada-familia": ["rays", "bird"],
-    "sant-pau": ["tiles", "sparkle"],
-    "park-guell": ["tiles", "sparkle"],
-    "casa-vicens": ["tiles", "sparkle"],
-    "tibidabo": ["cloud", "bird"],
-    "palau-musica": ["sparkle", "glow"],
-    "casa-batllo": ["tiles", "sparkle"],
-    "la-pedrera": ["cloud", "bird"],
-    "font-magica": ["wave", "sparkle"],
-    "boqueria": ["sparkle", "dust"],
-    "barri-gotic": ["bird", "dust"],
-    "torres-serranos": ["flag", "bird"],
-    "san-nicolas": ["rays", "sparkle"],
-    "valencia-cathedral": ["bird", "rays"],
-    "mercado-central": ["sparkle", "dust"],
-    "ciudad-artes": ["glow", "tiles"],
-    "oceanografic": ["wave", "bubble"],
-    "catedral-sevilla": ["rays", "bird"],
-    "real-alcazar": ["tiles", "cloud"],
-    "casa-pilatos": ["tiles", "dust"],
-    "metropol-parasol": ["glow", "tiles"],
-    "plaza-espana": ["tiles", "wave"],
-    "macarena": ["sparkle", "rays"],
-    "torre-oro": ["wave", "sparkle"],
-    "alcazaba-malaga": ["flag", "dust"],
-    "teatro-romano": ["dust", "rays"],
-    "gibralfaro": ["flag", "cloud"],
-    "caminito-del-rey": ["cloud", "bird"],
-    "catedral-malaga": ["rays", "bird"],
-  };
-
-  function hashStr(s) {
-    let h = 0;
-    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
-    return h >>> 0;
-  }
-
-  function makeRand(seed) {
-    let s = seed % 2147483647 || 1;
-    return () => {
-      s = (s * 48271) % 2147483647;
-      return (s - 1) / 2147483646;
-    };
-  }
-
-  function sceneElements(kind, rand) {
-    const n1 = (min, span) => min + Math.floor(rand() * span);
-    const f1 = (min, span) => min + rand() * span;
-    let out = "";
-    switch (kind) {
-      case "bird": {
-        const n = n1(2, 2);
-        for (let i = 0; i < n; i++) {
-          const flapDur = f1(0.32, 0.24).toFixed(2);
-          const flapDelay = f1(0, 0.3).toFixed(2);
-          out += `<svg class="scene-el bird" style="top:${f1(10, 42).toFixed(1)}%; animation-duration:${f1(9, 6).toFixed(1)}s; animation-delay:-${f1(0, 8).toFixed(1)}s;" viewBox="0 0 22 13">
-            <g class="bird-wing" style="animation-duration:${flapDur}s; animation-delay:-${flapDelay}s;"><path d="M11 6 Q4 -1 0 4" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linecap="round"/></g>
-            <g class="bird-wing" style="animation-duration:${flapDur}s; animation-delay:-${flapDelay}s;"><path d="M11 6 Q18 -1 22 4" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linecap="round"/></g>
-          </svg>`;
-        }
-        return out;
-      }
-      case "sparkle": {
-        const n = n1(6, 4);
-        for (let i = 0; i < n; i++) {
-          const size = f1(3, 3);
-          out += `<span class="scene-el sparkle" style="top:${f1(6, 78).toFixed(1)}%; left:${f1(4, 92).toFixed(1)}%; width:${size.toFixed(1)}px; height:${size.toFixed(1)}px; animation-duration:${f1(1.8, 2).toFixed(1)}s; animation-delay:-${f1(0, 3).toFixed(1)}s;"></span>`;
-        }
-        return out;
-      }
-      case "dust": {
-        const n = n1(7, 5);
-        for (let i = 0; i < n; i++) {
-          out += `<span class="scene-el dust" style="left:${f1(4, 92).toFixed(1)}%; animation-duration:${f1(5, 4).toFixed(1)}s; animation-delay:-${f1(0, 6).toFixed(1)}s;"></span>`;
-        }
-        return out;
-      }
-      case "bubble": {
-        const n = n1(7, 5);
-        for (let i = 0; i < n; i++) {
-          const size = f1(5, 6);
-          out += `<span class="scene-el bubble" style="left:${f1(4, 92).toFixed(1)}%; width:${size.toFixed(1)}px; height:${size.toFixed(1)}px; animation-duration:${f1(4, 4).toFixed(1)}s; animation-delay:-${f1(0, 6).toFixed(1)}s;"></span>`;
-        }
-        return out;
-      }
-      case "cloud": {
-        const n = n1(2, 2);
-        for (let i = 0; i < n; i++) {
-          const w = f1(60, 50);
-          out += `<span class="scene-el cloud" style="top:${f1(6, 30).toFixed(1)}%; width:${w.toFixed(0)}px; height:${(w * 0.4).toFixed(0)}px; animation-duration:${f1(20, 14).toFixed(1)}s; animation-delay:-${f1(0, 20).toFixed(1)}s;"></span>`;
-        }
-        return out;
-      }
-      case "flag": {
-        const n = n1(2, 2);
-        for (let i = 0; i < n; i++) {
-          out += `<span class="scene-el flag-wrap" style="top:${f1(8, 18).toFixed(1)}%; left:${f1(15, 70).toFixed(1)}%; animation-duration:${f1(1.8, 1.2).toFixed(1)}s; animation-delay:-${f1(0, 2).toFixed(1)}s;"><span class="flag-pole"></span><span class="flag"></span></span>`;
-        }
-        return out;
-      }
-      case "rays":
-        return `<span class="scene-el rays" style="animation-duration:${f1(40, 20).toFixed(0)}s;"></span>`;
-      case "tiles":
-        return `<span class="scene-el tiles" style="--shimmer-dur:${f1(2.8, 1.6).toFixed(1)}s;"></span>`;
-      case "glow":
-        return `<span class="scene-el glow" style="animation-duration:${f1(2.6, 1.2).toFixed(1)}s;"></span>`;
-      case "wave": {
-        const path = "M0 22 C 50 2, 150 2, 200 22 C 250 42, 350 42, 400 22 C 450 2, 550 2, 600 22 C 650 42, 750 42, 800 22 L800 40 L0 40 Z";
-        return `<span class="scene-el wave-wrap">
-          <svg class="wave-svg wave-back" style="animation-duration:${f1(11, 6).toFixed(1)}s;" viewBox="0 0 800 40" preserveAspectRatio="none"><path d="${path}" fill="#fff"/></svg>
-          <svg class="wave-svg wave-front" style="animation-duration:${f1(6, 4).toFixed(1)}s;" viewBox="0 0 800 40" preserveAspectRatio="none"><path d="${path}" fill="#fff"/></svg>
-        </span>`;
-      }
-      default:
-        return "";
-    }
-  }
-
-  function renderScene(h) {
-    const kinds = SCENE_CONFIG[h.id] || ["sparkle", "dust"];
-    const rand = makeRand(hashStr(h.id));
-    const img = h.photo || `images/highlights/${h.id}.png`;
-    const parts = kinds.map((k) => sceneElements(k, rand)).join("");
-    const kbDur = (17 + rand() * 9).toFixed(1);
-    const kbX = ((rand() > 0.5 ? -1 : 1) * (1.5 + rand() * 2)).toFixed(1);
-    const kbY = ((rand() > 0.5 ? -1 : 1) * (1.5 + rand() * 2)).toFixed(1);
-    return `
-      <div class="hero-scene">
-        <div class="hero-scene-img" style="background-image:url('${img}'); animation-duration:${kbDur}s; --kb-x:${kbX}%; --kb-y:${kbY}%;"></div>
-        <div class="scene-overlay">${parts}</div>
-        <div class="scene-shade"></div>
-      </div>`;
-  }
-
   function viewHighlightDetail(id) {
     const h = DATA.highlights.find((x) => x.id === id);
     if (!h) return viewNotFound();
     const city = cityById(h.city);
     const day = dayById(h.date);
+    const img = h.photo || `images/highlights/${h.id}.png`;
     return `
       ${header({ title: h.name, sub: city ? city.name : "", back: "#/highlights" })}
       <section class="section" style="padding-top:18px;">
-        ${renderScene(h)}
+        <img class="hero-photo" src="${img}" alt="" />
         <div class="hl-meta-row">
           ${city ? `<span class="hl-chip">${esc(city.name)}</span>` : ""}
           ${day ? `<a href="#/dag/${h.date}" class="hl-chip hl-chip-link">${esc(day.weekday)} ${dayNum(h.date)} ${esc(shortMonth(h.date))} →</a>` : ""}
