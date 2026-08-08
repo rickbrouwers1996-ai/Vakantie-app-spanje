@@ -31,17 +31,21 @@
         "breakfast": [
           { "name": "El Taller", "area": "Passeig de Torras i Bages 11", "note": "Klein, goed buurtcafé met bakkerij — verse croissants en koffie." },
           { "name": "Forn de Pa Martí Molins", "area": "Carrer de Martí Molins 48-62", "note": "Ambachtelijke bakkerij en familiebedrijf, vers brood en gebak." },
-          { "name": "Bar Colòmbia", "area": "Rambla de Fabra i Puig", "note": "Buurtbar sinds 1913 — ook prima voor een vroege koffie met iets zoets." }
+          { "name": "Bar Colòmbia", "area": "Rambla de Fabra i Puig", "note": "Buurtbar sinds 1913 — ook prima voor een vroege koffie met iets zoets." },
+          { "name": "Forn Mistral", "area": "Gràcia, iets verder", "note": "Bakkerij sinds 1879, wijd geroemd om de mini-croissants — de moeite als je toch in Gràcia bent." }
         ],
         "bar": [
           { "name": "Vidorra", "area": "Carrer de Monlau 35", "note": "Vermuteria en wijnbar met vooral Catalaanse wijnen, vijf minuten van het hotel." },
           { "name": "Bar Colòmbia", "area": "Rambla de Fabra i Puig", "note": "Een van de oudste kroegjes van de wijk, bekend om de berberechos met pittige saus." },
-          { "name": "Tasca i Vins", "area": "vlak bij metro La Sagrera", "note": "Beschutte, groene tapasterras vlak bij het hotel." }
+          { "name": "Tasca i Vins", "area": "vlak bij metro La Sagrera", "note": "Beschutte, groene tapasterras vlak bij het hotel." },
+          { "name": "Casa Donos", "area": "Sant Andreu", "note": "Vermout met mosselen, kokkels en patat voor twee — buurtklassieker." },
+          { "name": "K de cafè", "area": "Sant Andreu", "note": "Klein, gezellig café-bar, populair bij de buurt." }
         ],
         "dinner": [
           { "name": "Bar Torrente", "area": "Sant Andreu", "note": "Tapas met een moderne twist, dicht bij het hotel." },
           { "name": "La Bodegueta de Sant Andreu", "area": "Sant Andreu", "note": "Tortilla's en croquetes, alles huisgemaakt en lokaal ingekocht." },
-          { "name": "Bar Aparici", "area": "Sant Andreu", "note": "Familiebedrijf met gezellig terras, stevige klassiekers van de dagkaart." }
+          { "name": "Bar Aparici", "area": "Sant Andreu", "note": "Familiebedrijf met gezellig terras, stevige klassiekers van de dagkaart." },
+          { "name": "La Tapadera de Sant Andreu", "area": "Sant Andreu", "note": "Traditionele en eigentijdse tapas door elkaar." }
         ]
       }
     },
@@ -64,17 +68,22 @@
         "breakfast": [
           { "name": "Passage à Paris", "area": "Russafa", "note": "Franse bakkerij, geldt als een van de beste van Valencia — ideaal voor onderweg." },
           { "name": "Pastisseria Monpla", "area": "Russafa", "note": "Gevierde patisserie met verfijnd gebak en vriendelijke bediening." },
-          { "name": "Dulce de Leche Pastelería", "area": "Russafa", "note": "Argentijnse bakkerij, hoge plafonds, goede koffie en jus." }
+          { "name": "Dulce de Leche Pastelería", "area": "Russafa", "note": "Argentijnse bakkerij, hoge plafonds, goede koffie en jus." },
+          { "name": "Pastelería Limón & Merengue", "area": "Russafa", "note": "Franse invloeden, prachtige taarten en sterke espresso." }
         ],
         "bar": [
           { "name": "Maui Russafa", "area": "Russafa", "note": "Bekend om huisgemaakte vermout en mini-hamburgertapas." },
           { "name": "Bar Cremaet", "area": "Russafa", "note": "Ouderwetse buurtkroeg met de traditionele cremaet (koffie met rum, geflambeerd)." },
-          { "name": "Mare Meua", "area": "Russafa", "note": "Klein tapas- en pintxosbarretje met huisgemaakte sangria." }
+          { "name": "Mare Meua", "area": "Russafa", "note": "Klein tapas- en pintxosbarretje met huisgemaakte sangria." },
+          { "name": "El Rojo", "area": "Russafa", "note": "Gezellig, laagdrempelig buurtbarretje." },
+          { "name": "L'Alquimista", "area": "Russafa", "note": "Sfeervolle cocktail- en wijnbar." }
         ],
         "dinner": [
           { "name": "La Vendetta", "area": "Russafa", "note": "Een van de best beoordeelde adresjes van de wijk." },
           { "name": "Canalla Bistro", "area": "Russafa", "note": "Casual bistro van chef Ricard Camarena, gedeelde gerechten." },
-          { "name": "El Rodamón de Russafa", "area": "Russafa", "note": "Sfeervolle wijnbar-restaurant, populair bij locals." }
+          { "name": "El Rodamón de Russafa", "area": "Russafa", "note": "Sfeervolle wijnbar-restaurant, populair bij locals." },
+          { "name": "Masusa Paella Bar", "area": "Russafa", "note": "Gespecialiseerd in paella, ook voor twee personen." },
+          { "name": "Doña Petrona", "area": "Russafa", "note": "Gedeelde gerechten in een warme, drukke setting." }
         ]
       }
     },
@@ -97,17 +106,21 @@
         "breakfast": [
           { "name": "Panadería Bekeray", "area": "Nervión", "note": "Kwaliteitsbakkerij, geroemd om het brood en de verse donuts." },
           { "name": "Las Doncellas", "area": "Nervión", "note": "Buurtbakkerij, ook bekend om hartige gebakjes (dadel-spek-kaas)." },
-          { "name": "La Espiga Nervión", "area": "Nervión", "note": "Vaste bakker van de wijk, prima voor brood en zoet gebak onderweg." }
+          { "name": "La Espiga Nervión", "area": "Nervión", "note": "Vaste bakker van de wijk, prima voor brood en zoet gebak onderweg." },
+          { "name": "Manu Jara", "area": "Nervión", "note": "Ambachtelijke bakkerij, hoog aangeschreven in de wijk." },
+          { "name": "La Tahona", "area": "Nervión", "note": "Traditionele bakker voor brood en zoet gebak." }
         ],
         "bar": [
           { "name": "La Bernarda", "area": "Nervión", "note": "Drukke, goedbeoordeelde tapasbar vlak bij het station." },
           { "name": "Taberna de Nervión", "area": "Marqués del Nervión 116", "note": "Echte buurtsfeer met een terras naast het park." },
-          { "name": "Belvedere", "area": "Cardenal Lluch / Juan de Padilla", "note": "Creatieve tapas op een zonnig of beschut terras." }
+          { "name": "Belvedere", "area": "Cardenal Lluch / Juan de Padilla", "note": "Creatieve tapas op een zonnig of beschut terras." },
+          { "name": "Keycha", "area": "Nervión", "note": "Aangenaam terras, kwaliteit Ibérico-producten." }
         ],
         "dinner": [
           { "name": "Sevilla Bahía", "area": "Nervión", "note": "Vis en rijstgerechten, korte loopafstand van het hotel." },
           { "name": "Panrallao", "area": "Nervión", "note": "Populaire tapas, geliefd bij de buurtbewoners." },
-          { "name": "La Flor de la Canela", "area": "Nervión", "note": "Andalusische keuken met Peruaanse invloeden." }
+          { "name": "La Flor de la Canela", "area": "Nervión", "note": "Andalusische keuken met Peruaanse invloeden." },
+          { "name": "Taberna de Nervión", "area": "Marqués del Nervión 116", "note": "Ook prima voor een volledig diner, niet alleen tapas." }
         ]
       }
     },
@@ -130,17 +143,21 @@
         "breakfast": [
           { "name": "Casa Aranda", "area": "bij Mercado Atarazanas", "note": "Historische churrería — hét ontbijtadres van Málaga sinds 1932." },
           { "name": "Pastelería L'abadi", "area": "La Merced", "note": "Franse bakkerij, hoog gewaardeerd om het gebak." },
-          { "name": "La Canasta", "area": "meerdere plekken in het centrum", "note": "Bakkerijketen — van tostada met tomaat tot vers gebak." }
+          { "name": "La Canasta", "area": "meerdere plekken in het centrum", "note": "Bakkerijketen — van tostada met tomaat tot vers gebak." },
+          { "name": "Tejeringos Coffee", "area": "Centro", "note": "Churros met een twist — andere sauzen dan alleen chocolade." },
+          { "name": "Bun and Coffee", "area": "Centro", "note": "Goede koffie en donuts, ook opties zonder lactose." }
         ],
         "bar": [
           { "name": "El Pimpi", "area": "Centro, bij de kathedraal", "note": "Instituut met wijnkelders vol flamenco- en stierenvechtaffiches." },
           { "name": "Bar La Tranca", "area": "La Merced", "note": "Ouderwetse kroeg met vermout, zoete wijn en huisgemaakte tapas." },
-          { "name": "La Farola de Orellana", "area": "vlak bij Calle Larios", "note": "Klein en authentiek, ongewijzigd sinds 1938." }
+          { "name": "La Farola de Orellana", "area": "vlak bij Calle Larios", "note": "Klein en authentiek, ongewijzigd sinds 1938." },
+          { "name": "Terraza Oasis", "area": "oude stad", "note": "Loungebank-terras middenin het centrum, relaxte sfeer." }
         ],
         "dinner": [
           { "name": "Casa Lola Strachan", "area": "Plaza de las Flores", "note": "Moderne tapas op een van de leukste pleintjes van het centrum." },
           { "name": "El Tapeo de Cervantes", "area": "Centro", "note": "Sfeervol en gezellig, sterk in vis- en vleestapas met een goede wijnkaart." },
-          { "name": "Toro Muelle Uno", "area": "Muelle Uno", "note": "Aan de haven, mooi voor een avond met uitzicht op het water." }
+          { "name": "Toro Muelle Uno", "area": "Muelle Uno", "note": "Aan de haven, mooi voor een avond met uitzicht op het water." },
+          { "name": "Entremuros, Raíces de Málaga", "area": "Centro", "note": "Traditionele Malagueense recepten met een moderne twist." }
         ]
       }
     }
@@ -480,6 +497,385 @@
       }
     ]
   },
+  "highlights": [
+    {
+      "id": "sagrada-familia",
+      "name": "Sagrada Família",
+      "city": "barcelona",
+      "date": "2026-08-30",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "Antoni Gaudí nam het project in 1883 over en werkte er tot zijn dood in 1926 aan, wetend dat hij het zelf nooit af zou krijgen.",
+        "De bouw loopt inmiddels meer dan 140 jaar en wordt volledig betaald met toegangskaartjes en donaties, zonder overheidsgeld.",
+        "De achttien torens staan voor Jezus, Maria, de twaalf apostelen en de vier evangelisten — de Jezustoren wordt de hoogste van allemaal."
+      ]
+    },
+    {
+      "id": "sant-pau",
+      "name": "Hospital de Sant Pau",
+      "city": "barcelona",
+      "date": "2026-08-30",
+      "icon": "gaudi",
+      "photo": null,
+      "facts": [
+        "Ontworpen door Lluís Domènech i Montaner, tijdgenoot en rivaal van Gaudí, als een van de grootste jugendstilcomplexen ter wereld.",
+        "Het bestaat uit tientallen losse paviljoens, met opzet zo gebouwd dat patiënten nooit ver naar buiten hoefden te lopen.",
+        "Sinds 2009 is het geen ziekenhuis meer, maar een cultuur- en kennishub."
+      ]
+    },
+    {
+      "id": "park-guell",
+      "name": "Park Güell",
+      "city": "barcelona",
+      "date": "2026-08-31",
+      "icon": "nature",
+      "photo": null,
+      "facts": [
+        "Oorspronkelijk bedoeld als luxe woonwijk met 60 villa's — het plan mislukte commercieel en werd in 1922 een openbaar park.",
+        "De golvende bank op het hoofdplein is bekleed met trencadís, gebroken keramiektegels — Gaudí's handelsmerk.",
+        "Gaudí woonde er zelf jarenlang in een van de weinige gebouwde huizen, nu het Gaudí Huis Museum."
+      ]
+    },
+    {
+      "id": "casa-vicens",
+      "name": "Casa Vicens",
+      "city": "barcelona",
+      "date": "2026-08-31",
+      "icon": "gaudi",
+      "photo": null,
+      "facts": [
+        "Het allereerste grote gebouw van Gaudí (1883-1885), gebouwd voor een fabrikant van bakstenen en tegels — vandaar de kleurige keramiek buiten.",
+        "Geldt als een van de startpunten van de art-nouveaubeweging in heel Europa.",
+        "Pas sinds 2017 voor publiek open, na eeuwenlang particulier bezit te zijn geweest."
+      ]
+    },
+    {
+      "id": "tibidabo",
+      "name": "Tibidabo",
+      "city": "barcelona",
+      "date": "2026-08-31",
+      "icon": "nature",
+      "photo": null,
+      "facts": [
+        "Met 512 meter het hoogste punt van Barcelona — op heldere dagen is zelfs Mallorca zichtbaar.",
+        "Het pretpark op de top dateert uit 1899, wat het een van de oudste nog bestaande pretparken ter wereld maakt.",
+        "De funiculaire die naar boven rijdt, is meer dan een eeuw oud."
+      ]
+    },
+    {
+      "id": "palau-musica",
+      "name": "Palau de la Música Catalana",
+      "city": "barcelona",
+      "date": "2026-09-01",
+      "icon": "culture",
+      "photo": null,
+      "facts": [
+        "Concertzaal uit 1908 met een enorm glazen plafond in de vorm van een omgekeerde zon.",
+        "Staat sinds 1997 op de Werelderfgoedlijst van UNESCO.",
+        "Overdag is er dankzij de glas-in-loodkoepel nauwelijks kunstlicht nodig in de zaal."
+      ]
+    },
+    {
+      "id": "casa-batllo",
+      "name": "Casa Batlló",
+      "city": "barcelona",
+      "date": "2026-09-02",
+      "icon": "gaudi",
+      "photo": null,
+      "facts": [
+        "Ook wel het \"Huis van de Beenderen\" genoemd, vanwege de skeletachtige balkons en botvormige zuilen.",
+        "Het dak verbeeldt de rug van een draak, verwijzend naar de legende van Sint-Joris die het monster doorboort.",
+        "Gaudí gebruikte nauwelijks rechte lijnen — zelfs de muren binnen golven mee."
+      ]
+    },
+    {
+      "id": "la-pedrera",
+      "name": "La Pedrera (Casa Milà)",
+      "city": "barcelona",
+      "date": "2026-09-02",
+      "icon": "gaudi",
+      "photo": null,
+      "facts": [
+        "Het laatste woonhuis dat Gaudí ontwierp (1906-1912) — de golvende, ongeverfde gevel leverde het de bijnaam \"steengroeve\" op.",
+        "De schoorstenen op het dak zijn zo beeldhouwkundig vervormd dat ze vaak worden vergeleken met gemaskerde wachters.",
+        "Er zit geen enkele dragende binnenmuur in het gebouw — alles steunt op zuilen en balken, wat de indeling erg flexibel maakte."
+      ]
+    },
+    {
+      "id": "font-magica",
+      "name": "Font Màgica de Montjuïc",
+      "city": "barcelona",
+      "date": "2026-09-02",
+      "icon": "culture",
+      "photo": null,
+      "facts": [
+        "Gebouwd voor de Wereldtentoonstelling van 1929, met een licht-, water- en muziekshow die tot vandaag draait.",
+        "Ligt op de zichtas tussen Plaça Espanya en het MNAC.",
+        "De show combineert duizenden liters water per minuut met gekleurde verlichting op muziek."
+      ]
+    },
+    {
+      "id": "boqueria",
+      "name": "Mercat de la Boqueria",
+      "city": "barcelona",
+      "date": "2026-09-02",
+      "icon": "plaza",
+      "photo": null,
+      "facts": [
+        "Een van de oudste en grootste overdekte markten van Europa, met wortels tot in de 13e eeuw.",
+        "Trekt dagelijks duizenden bezoekers naar honderden kraampjes.",
+        "Ligt aan La Rambla, op de plek waar ooit een van de stadspoorten van Barcelona stond."
+      ]
+    },
+    {
+      "id": "barri-gotic",
+      "name": "Barri Gòtic & Catedral de Barcelona",
+      "city": "barcelona",
+      "date": "2026-09-02",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "De wijk ligt op de fundamenten van het Romeinse Barcino — stukken van de originele stadsmuur zijn nog zichtbaar.",
+        "De gotische gevel van de kathedraal is pas begin 20e eeuw toegevoegd, eeuwen na de rest van het gebouw.",
+        "In de kloostertuin lopen van oudsher dertien witte ganzen rond, symbool voor de leeftijd van de martelares Santa Eulàlia."
+      ]
+    },
+    {
+      "id": "torres-serranos",
+      "name": "Torres de Serranos",
+      "city": "valencia",
+      "date": "2026-09-04",
+      "icon": "fortress",
+      "photo": null,
+      "facts": [
+        "Gebouwd eind 14e eeuw als een van twaalf stadspoorten van middeleeuws Valencia — nu een van de twee overgebleven poorten.",
+        "Diende eeuwenlang als gevangenis, onder meer voor edellieden.",
+        "Gold in zijn tijd als een van de mooiste stadspoorten van Europa."
+      ]
+    },
+    {
+      "id": "san-nicolas",
+      "name": "Iglesia de San Nicolás",
+      "city": "valencia",
+      "date": "2026-09-04",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "Bekend als de \"Sixtijnse Kapel van Valencia\" door het spectaculaire, volledig beschilderde plafond.",
+        "Het plafond kwam pas na een jarenlange restauratie in 2016 weer in volle glorie tevoorschijn.",
+        "Een van de oudste kerken van de stad, met wortels tot in de 13e eeuw."
+      ]
+    },
+    {
+      "id": "valencia-cathedral",
+      "name": "Catedral de Valencia & Miguelete",
+      "city": "valencia",
+      "date": "2026-09-04",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "Zou volgens de overlevering de Heilige Graal bewaren, de kelk die Jezus bij het Laatste Avondmaal gebruikt zou hebben.",
+        "De Miguelete-klokkentoren is beklimbaar via bijna 210 treden, met uitzicht over de hele oude stad.",
+        "Gebouwd op de plek van een voormalige moskee, die op zijn beurt op een Romeinse tempel stond."
+      ]
+    },
+    {
+      "id": "mercado-central",
+      "name": "Mercado Central & Llotja de la Seda",
+      "city": "valencia",
+      "date": "2026-09-04",
+      "icon": "plaza",
+      "photo": null,
+      "facts": [
+        "De Llotja de la Seda, de voormalige zijdebeurs, is een laatgotisch meesterwerk uit de 15e eeuw en UNESCO-werelderfgoed.",
+        "De Mercado Central is een van de grootste overdekte versmarkten van Europa, met honderden kraampjes onder een opvallende koepel.",
+        "Beide gebouwen liggen letterlijk tegenover elkaar — een verwijzing naar Valencia's rijke handelsverleden."
+      ]
+    },
+    {
+      "id": "ciudad-artes",
+      "name": "Ciutat de les Arts i les Ciències",
+      "city": "valencia",
+      "date": "2026-09-05",
+      "icon": "culture",
+      "photo": null,
+      "facts": [
+        "Ontworpen door de Valenciaanse architect Santiago Calatrava, gebouwd in de voormalige bedding van de rivier de Turia.",
+        "Bestaat uit meerdere futuristische gebouwen: een wetenschapsmuseum, een IMAX-bioscoop (Hemisfèric) en het Oceanogràfic.",
+        "Het complex veranderde in ruim tien jaar bouwtijd het hele silhouet van de stad."
+      ]
+    },
+    {
+      "id": "oceanografic",
+      "name": "Oceanogràfic",
+      "city": "valencia",
+      "date": "2026-09-05",
+      "icon": "water",
+      "photo": null,
+      "facts": [
+        "Het grootste oceanarium van Europa, ontworpen door architect Félix Candela.",
+        "Herbergt tientallen ecosystemen, van de Arctische zee tot tropische riffen.",
+        "Het onderwaterrestaurant ligt middenin het haaienbassin."
+      ]
+    },
+    {
+      "id": "catedral-sevilla",
+      "name": "Catedral de Sevilla & Giralda",
+      "city": "sevilla",
+      "date": "2026-09-06",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "De grootste gotische kathedraal ter wereld, gebouwd op de plek van de voormalige hoofdmoskee van Sevilla.",
+        "Het praalgraf van Christoffel Columbus wordt gedragen door vier praalbeelden die de koninkrijken van Spanje verbeelden.",
+        "De Giralda was ooit het minaret van de moskee — beklimbaar via hellingen in plaats van trappen, zodat er ooit te paard naar boven gereden kon worden."
+      ]
+    },
+    {
+      "id": "real-alcazar",
+      "name": "Real Alcázar",
+      "city": "sevilla",
+      "date": "2026-09-07",
+      "icon": "fortress",
+      "photo": null,
+      "facts": [
+        "Geldt als het oudste nog in gebruik zijnde koninklijk paleis van Europa — de Spaanse koninklijke familie verblijft er nog bij bezoeken aan Sevilla.",
+        "Een mix van Moorse (mudéjar), gotische en renaissancestijlen, gebouwd en verbouwd over meer dan zeven eeuwen.",
+        "Diende als filmlocatie voor de tuinen van Dorne in Game of Thrones."
+      ]
+    },
+    {
+      "id": "casa-pilatos",
+      "name": "Casa de Pilatos",
+      "city": "sevilla",
+      "date": "2026-09-07",
+      "icon": "fortress",
+      "photo": null,
+      "facts": [
+        "16e-eeuws paleis dat Andalusische (mudéjar) architectuur combineert met Italiaanse renaissance-invloeden.",
+        "Zou geïnspireerd zijn op het huis van Pontius Pilatus in Jeruzalem — vandaar de naam.",
+        "Bezit een van de grootste privécollecties azulejo-tegels van Sevilla."
+      ]
+    },
+    {
+      "id": "metropol-parasol",
+      "name": "Metropol Parasol (Las Setas)",
+      "city": "sevilla",
+      "date": "2026-09-07",
+      "icon": "culture",
+      "photo": null,
+      "facts": [
+        "Met zijn houten constructie een van de grootste houten bouwwerken ter wereld.",
+        "Gebouwd boven een archeologische vindplaats met Romeinse en Moorse resten, nu een ondergronds museum.",
+        "De bijnaam \"Las Setas\" (de paddenstoelen) verwijst naar de golvende vorm."
+      ]
+    },
+    {
+      "id": "plaza-espana",
+      "name": "Plaza de España",
+      "city": "sevilla",
+      "date": "2026-09-08",
+      "icon": "plaza",
+      "photo": null,
+      "facts": [
+        "Gebouwd voor de Iberoamerikaanse Tentoonstelling van 1929, in een halve cirkel die de band tussen Spanje en zijn voormalige kolonies moest verbeelden.",
+        "Elke Spaanse provincie heeft een eigen betegelde nis met kaart en historisch tafereel.",
+        "Diende als filmlocatie voor onder meer Star Wars: Episode II en Lawrence of Arabia."
+      ]
+    },
+    {
+      "id": "macarena",
+      "name": "Basílica de la Macarena",
+      "city": "sevilla",
+      "date": "2026-09-07",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "Huisvest het beeld van de Maagd van de Macarena, een van de meest vereerde Mariabeelden van Andalusië.",
+        "Tijdens de Semana Santa trekt de processie met dit beeld tot diep in de nacht duizenden mensen de straat op.",
+        "Het beeld draagt vaak sieraden geschonken door bewonderaars, onder wie beroemde stierenvechters."
+      ]
+    },
+    {
+      "id": "torre-oro",
+      "name": "Torre del Oro",
+      "city": "sevilla",
+      "date": "2026-09-08",
+      "icon": "fortress",
+      "photo": null,
+      "facts": [
+        "13e-eeuwse wachttoren aan de Guadalquivir, gebouwd om de rivier en scheepvaart naar Sevilla te bewaken.",
+        "De naam (\"Gouden Toren\") komt mogelijk van gouden glazuurtegels die de toren ooit bedekten.",
+        "Er liep ooit een ketting tussen deze toren en een tegenhanger aan de overkant om de rivier bij dreiging af te sluiten."
+      ]
+    },
+    {
+      "id": "alcazaba-malaga",
+      "name": "Alcazaba de Málaga",
+      "city": "malaga",
+      "date": "2026-09-13",
+      "icon": "fortress",
+      "photo": null,
+      "facts": [
+        "Moors fort-paleis uit de 11e eeuw, gebouwd op de fundamenten van een eerdere Romeinse vesting.",
+        "Geldt als een van de best bewaarde alcazaba's van Spanje, met meerdere ringmuren en poorten.",
+        "Verbonden met het hoger gelegen Castillo de Gibralfaro via een versterkte muur."
+      ]
+    },
+    {
+      "id": "teatro-romano",
+      "name": "Teatro Romano",
+      "city": "malaga",
+      "date": "2026-09-10",
+      "icon": "culture",
+      "photo": null,
+      "facts": [
+        "Romeins theater uit de 1e eeuw v.Chr., pas in 1951 herontdekt tijdens bouwwerkzaamheden.",
+        "Werd eeuwenlang als bouwmateriaal-bron gebruikt voor de Moorse Alcazaba ernaast.",
+        "Nog altijd deels blootgelegd, met een bezoekerscentrum over de vindplaats."
+      ]
+    },
+    {
+      "id": "gibralfaro",
+      "name": "Castillo de Gibralfaro",
+      "city": "malaga",
+      "date": "2026-09-11",
+      "icon": "fortress",
+      "photo": null,
+      "facts": [
+        "Militair fort uit de 14e eeuw, gebouwd door de Moorse heersers om de Alcazaba en de haven te beschermen.",
+        "Ligt op een heuvel met een van de beste panorama's over Málaga en de Middellandse Zee.",
+        "De naam zou zijn afgeleid van een oude vuurtoren (\"far\"), gecombineerd met het Griekse woord voor rots."
+      ]
+    },
+    {
+      "id": "caminito-del-rey",
+      "name": "Caminito del Rey",
+      "city": "malaga",
+      "date": "2026-09-12",
+      "icon": "nature",
+      "photo": null,
+      "facts": [
+        "Oorspronkelijk gebouwd in 1905 als looppad voor arbeiders van een waterkrachtcentrale, hoog langs de wanden van de Gaitanes-kloof.",
+        "Was decennialang berucht als \"gevaarlijkste pad ter wereld\" nadat het in verval raakte en er dodelijke ongelukken gebeurden.",
+        "Volledig gerenoveerd en in 2015 heropend met een nieuw, veilig loopnetwerk — het uitzicht bleef even spectaculair."
+      ]
+    },
+    {
+      "id": "catedral-malaga",
+      "name": "Catedral de Málaga",
+      "city": "malaga",
+      "date": "2026-09-10",
+      "icon": "church",
+      "photo": null,
+      "facts": [
+        "Bekend als \"La Manquita\" (de eenarmige) omdat de zuidertoren nooit is afgebouwd — geldgebrek, deels omdat het geld naar de Amerikaanse Onafhankelijkheidsoorlog ging.",
+        "Gebouwd op de plek van de vroegere hoofdmoskee van Málaga.",
+        "De bouw duurde meer dan twee eeuwen, zichtbaar aan de mix van renaissance- en barokstijlen."
+      ]
+    }
+  ],
   "tickets": {
     "note": "Alle bedragen voor 2 personen. Gecontroleerd op de officiële sites, 6 augustus 2026.",
     "footnote": "⚠️ Prijzen met ± zijn niet eenduidig te verifiëren — bel Casa de Pilatos (+34 954 225 298) en check San Nicolás ter plaatse.",
