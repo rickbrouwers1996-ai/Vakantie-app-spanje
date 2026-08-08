@@ -419,6 +419,7 @@
       </div>` : ""}
 
       <p class="footnote">Check actuele reistijden en openingstijden in Google Maps.</p>
+      ${notesSection(date)}
     `;
   }
 
@@ -442,7 +443,25 @@
         `).join("")}
       </section>
       <p class="footnote">${esc(d.footnote)}</p>
+      ${notesSection(d.date)}
     `;
+  }
+
+  // ---------------- personal notes (localStorage) ----------------
+  function notesKey(date) {
+    return `spanje2026-note-${date}`;
+  }
+
+  function notesSection(date) {
+    let saved = "";
+    try {
+      saved = localStorage.getItem(notesKey(date)) || "";
+    } catch (e) { /* localStorage unavailable */ }
+    return `
+      <section class="section">
+        <div class="section-title">Mijn aantekeningen</div>
+        <textarea class="notes-input" data-note-date="${date}" placeholder="Typ hier je eigen aantekeningen voor deze dag — tips, herinneringen, wat dan ook.">${esc(saved)}</textarea>
+      </section>`;
   }
 
   function viewTickets() {
@@ -484,6 +503,104 @@
 
   function viewNotFound() {
     return `${header({ title: "Niet gevonden", back: "#/" })}<div class="empty-state">Deze pagina bestaat niet.</div>`;
+  }
+
+  // ---------------- search ----------------
+  function viewZoeken() {
+    return `
+      ${header({ title: "Zoeken", plain: true })}
+      <section class="section" style="padding-top:18px;">
+        <input type="search" class="search-input" id="search-input" placeholder="Zoek op highlight, eten of dag…" autocomplete="off" />
+      </section>
+      <section class="section" id="search-results" style="padding-top:0;">
+        <p class="section-desc">Typ om te zoeken door highlights, eten &amp; drinken en dagen.</p>
+      </section>
+    `;
+  }
+
+  function normalizeSearch(s) {
+    return String(s ?? "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
+  function searchAll(query) {
+    const q = normalizeSearch(query.trim());
+    if (!q) return null;
+    const highlights = DATA.highlights.filter((h) => {
+      const city = cityById(h.city);
+      const haystack = normalizeSearch([h.name, city ? city.name : "", h.tip, h.facts.join(" ")].join(" "));
+      return haystack.includes(q);
+    });
+    const food = [];
+    DATA.cities.forEach((c) => {
+      if (!c.foodGuide) return;
+      ["breakfast", "bar", "dinner"].forEach((key) => {
+        (c.foodGuide[key] || []).forEach((item) => {
+          if (normalizeSearch(item.name).includes(q) || normalizeSearch(item.area).includes(q)) {
+            food.push({ ...item, cityName: c.name });
+          }
+        });
+      });
+    });
+    const days = allDaysOrdered().filter((d) => {
+      const city = cityById(d.city);
+      return normalizeSearch(d.title).includes(q) || (city && normalizeSearch(city.name).includes(q));
+    });
+    return { highlights, food, days };
+  }
+
+  function searchResultRow(href, title, sub, opts) {
+    const external = opts && opts.external;
+    return `
+      <a href="${href}" class="search-result" ${external ? 'target="_blank" rel="noopener"' : ""}>
+        <div class="search-result-main">
+          <div class="search-result-title">${esc(title)}</div>
+          <div class="search-result-sub">${esc(sub)}</div>
+        </div>
+        <div class="search-result-chevron">${external ? "↗" : "›"}</div>
+      </a>`;
+  }
+
+  function renderSearchResults(query) {
+    const container = document.getElementById("search-results");
+    if (!container) return;
+    const result = searchAll(query);
+    if (!result) {
+      container.innerHTML = `<p class="section-desc">Typ om te zoeken door highlights, eten &amp; drinken en dagen.</p>`;
+      return;
+    }
+    const { highlights, food, days } = result;
+    if (!highlights.length && !food.length && !days.length) {
+      container.innerHTML = `<p class="section-desc">Niets gevonden.</p>`;
+      return;
+    }
+    container.innerHTML = `
+      ${days.length ? `
+        <div class="search-group">
+          <div class="search-group-label">Dagen</div>
+          ${days.map((d) => {
+            const city = cityById(d.city);
+            return searchResultRow(`#/dag/${d.date}`, d.title, `${d.weekday} · ${city ? city.name : ""}`);
+          }).join("")}
+        </div>` : ""}
+      ${highlights.length ? `
+        <div class="search-group">
+          <div class="search-group-label">Highlights</div>
+          ${highlights.map((h) => {
+            const city = cityById(h.city);
+            return searchResultRow(`#/highlight/${h.id}`, h.name, city ? city.name : "");
+          }).join("")}
+        </div>` : ""}
+      ${food.length ? `
+        <div class="search-group">
+          <div class="search-group-label">Eten &amp; drinken</div>
+          ${food.map((it) => searchResultRow(
+            mapsOpenUrl([it.name + ", " + it.area]), it.name, `${it.area} · ${it.cityName}`, { external: true }
+          )).join("")}
+        </div>` : ""}
+    `;
   }
 
   // ---------------- router ----------------
@@ -530,6 +647,9 @@
       case "tickets":
         html = viewTickets();
         break;
+      case "zoeken":
+        html = viewZoeken();
+        break;
       default:
         html = viewNotFound();
     }
@@ -545,6 +665,19 @@
       window.scrollTo(0, 0);
     }
     updateTabbar(tabRoute);
+
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) {
+      searchInput.addEventListener("input", () => renderSearchResults(searchInput.value));
+    }
+    const notesEl = document.querySelector(".notes-input");
+    if (notesEl) {
+      notesEl.addEventListener("input", () => {
+        try {
+          localStorage.setItem(notesKey(notesEl.dataset.noteDate), notesEl.value);
+        } catch (e) { /* localStorage unavailable */ }
+      });
+    }
   }
 
   function updateTabbar(route) {
