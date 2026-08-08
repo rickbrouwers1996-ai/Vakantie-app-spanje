@@ -24,8 +24,7 @@
       "hotel": {
         "name": "easyHotel Barcelona La Sagrera",
         "neighborhood": "Sant Andreu / La Sagrera",
-        "place": "easyHotel Barcelona La Sagrera, Barcelona",
-        "note": "Let op: easyHotel heeft twee vestigingen in Barcelona — deze planning gaat uit van La Sagrera (dichter bij het centrum). Check je boeking; de andere vestiging (Fira, bij L'Hospitalet) ligt verder van deze route af."
+        "place": "easyHotel Barcelona La Sagrera, Barcelona"
       },
       "foodGuide": {
         "breakfast": [
@@ -503,7 +502,6 @@
       "name": "Sagrada Família",
       "city": "barcelona",
       "date": "2026-08-30",
-      "icon": "church",
       "photo": null,
       "facts": [
         "Antoni Gaudí nam het project in 1883 over en werkte er tot zijn dood in 1926 aan, wetend dat hij het zelf nooit af zou krijgen.",
@@ -516,7 +514,6 @@
       "name": "Hospital de Sant Pau",
       "city": "barcelona",
       "date": "2026-08-30",
-      "icon": "gaudi",
       "photo": null,
       "facts": [
         "Ontworpen door Lluís Domènech i Montaner, tijdgenoot en rivaal van Gaudí, als een van de grootste jugendstilcomplexen ter wereld.",
@@ -529,7 +526,6 @@
       "name": "Park Güell",
       "city": "barcelona",
       "date": "2026-08-31",
-      "icon": "nature",
       "photo": null,
       "facts": [
         "Oorspronkelijk bedoeld als luxe woonwijk met 60 villa's — het plan mislukte commercieel en werd in 1922 een openbaar park.",
@@ -542,7 +538,6 @@
       "name": "Casa Vicens",
       "city": "barcelona",
       "date": "2026-08-31",
-      "icon": "gaudi",
       "photo": null,
       "facts": [
         "Het allereerste grote gebouw van Gaudí (1883-1885), gebouwd voor een fabrikant van bakstenen en tegels — vandaar de kleurige keramiek buiten.",
@@ -555,7 +550,6 @@
       "name": "Tibidabo",
       "city": "barcelona",
       "date": "2026-08-31",
-      "icon": "nature",
       "photo": null,
       "facts": [
         "Met 512 meter het hoogste punt van Barcelona — op heldere dagen is zelfs Mallorca zichtbaar.",
@@ -568,7 +562,6 @@
       "name": "Palau de la Música Catalana",
       "city": "barcelona",
       "date": "2026-09-01",
-      "icon": "culture",
       "photo": null,
       "facts": [
         "Concertzaal uit 1908 met een enorm glazen plafond in de vorm van een omgekeerde zon.",
@@ -581,7 +574,6 @@
       "name": "Casa Batlló",
       "city": "barcelona",
       "date": "2026-09-02",
-      "icon": "gaudi",
       "photo": null,
       "facts": [
         "Ook wel het \"Huis van de Beenderen\" genoemd, vanwege de skeletachtige balkons en botvormige zuilen.",
@@ -594,7 +586,6 @@
       "name": "La Pedrera (Casa Milà)",
       "city": "barcelona",
       "date": "2026-09-02",
-      "icon": "gaudi",
       "photo": null,
       "facts": [
         "Het laatste woonhuis dat Gaudí ontwierp (1906-1912) — de golvende, ongeverfde gevel leverde het de bijnaam \"steengroeve\" op.",
@@ -607,7 +598,6 @@
       "name": "Font Màgica de Montjuïc",
       "city": "barcelona",
       "date": "2026-09-02",
-      "icon": "culture",
       "photo": null,
       "facts": [
         "Gebouwd voor de Wereldtentoonstelling van 1929, met een licht-, water- en muziekshow die tot vandaag draait.",
@@ -620,7 +610,6 @@
       "name": "Mercat de la Boqueria",
       "city": "barcelona",
       "date": "2026-09-02",
-      "icon": "plaza",
       "photo": null,
       "facts": [
         "Een van de oudste en grootste overdekte markten van Europa, met wortels tot in de 13e eeuw.",
@@ -633,7 +622,6 @@
       "name": "Barri Gòtic & Catedral de Barcelona",
       "city": "barcelona",
       "date": "2026-09-02",
-      "icon": "church",
       "photo": null,
       "facts": [
         "De wijk ligt op de fundamenten van het Romeinse Barcino — stukken van de originele stadsmuur zijn nog zichtbaar.",
@@ -646,7 +634,6 @@
       "name": "Torres de Serranos",
       "city": "valencia",
       "date": "2026-09-04",
-      "icon": "fortress",
       "photo": null,
       "facts": [
         "Gebouwd eind 14e eeuw als een van twaalf stadspoorten van middeleeuws Valencia — nu een van de twee overgebleven poorten.",
@@ -659,7 +646,6 @@
       "name": "Iglesia de San Nicolás",
       "city": "valencia",
       "date": "2026-09-04",
-      "icon": "church",
       "photo": null,
       "facts": [
         "Bekend als de \"Sixtijnse Kapel van Valencia\" door het spectaculaire, volledig beschilderde plafond.",
@@ -672,7 +658,6 @@
       "name": "Catedral de Valencia & Miguelete",
       "city": "valencia",
       "date": "2026-09-04",
-      "icon": "church",
       "photo": null,
       "facts": [
         "Zou volgens de overlevering de Heilige Graal bewaren, de kelk die Jezus bij het Laatste Avondmaal gebruikt zou hebben.",
@@ -685,7 +670,6 @@
       "name": "Mercado Central & Llotja de la Seda",
       "city": "valencia",
       "date": "2026-09-04",
-      "icon": "plaza",
       "photo": null,
       "facts": [
         "De Llotja de la Seda, de voormalige zijdebeurs, is een laatgotisch meesterwerk uit de 15e eeuw en UNESCO-werelderfgoed.",
@@ -698,7 +682,6 @@
       "name": "Ciutat de les Arts i les Ciències",
       "city": "valencia",
       "date": "2026-09-05",
-      "icon": "culture",
       "photo": null,
       "facts": [
         "Ontworpen door de Valenciaanse architect Santiago Calatrava, gebouwd in de voormalige bedding van de rivier de Turia.",
@@ -711,7 +694,6 @@
       "name": "Oceanogràfic",
       "city": "valencia",
       "date": "2026-09-05",
-      "icon": "water",
       "photo": null,
       "facts": [
         "Het grootste oceanarium van Europa, ontworpen door architect Félix Candela.",
@@ -724,7 +706,6 @@
       "name": "Catedral de Sevilla & Giralda",
       "city": "sevilla",
       "date": "2026-09-06",
-      "icon": "church",
       "photo": null,
       "facts": [
         "De grootste gotische kathedraal ter wereld, gebouwd op de plek van de voormalige hoofdmoskee van Sevilla.",
@@ -737,7 +718,6 @@
       "name": "Real Alcázar",
       "city": "sevilla",
       "date": "2026-09-07",
-      "icon": "fortress",
       "photo": null,
       "facts": [
         "Geldt als het oudste nog in gebruik zijnde koninklijk paleis van Europa — de Spaanse koninklijke familie verblijft er nog bij bezoeken aan Sevilla.",
@@ -750,7 +730,6 @@
       "name": "Casa de Pilatos",
       "city": "sevilla",
       "date": "2026-09-07",
-      "icon": "fortress",
       "photo": null,
       "facts": [
         "16e-eeuws paleis dat Andalusische (mudéjar) architectuur combineert met Italiaanse renaissance-invloeden.",
@@ -763,7 +742,6 @@
       "name": "Metropol Parasol (Las Setas)",
       "city": "sevilla",
       "date": "2026-09-07",
-      "icon": "culture",
       "photo": null,
       "facts": [
         "Met zijn houten constructie een van de grootste houten bouwwerken ter wereld.",
@@ -776,7 +754,6 @@
       "name": "Plaza de España",
       "city": "sevilla",
       "date": "2026-09-08",
-      "icon": "plaza",
       "photo": null,
       "facts": [
         "Gebouwd voor de Iberoamerikaanse Tentoonstelling van 1929, in een halve cirkel die de band tussen Spanje en zijn voormalige kolonies moest verbeelden.",
@@ -789,7 +766,6 @@
       "name": "Basílica de la Macarena",
       "city": "sevilla",
       "date": "2026-09-07",
-      "icon": "church",
       "photo": null,
       "facts": [
         "Huisvest het beeld van de Maagd van de Macarena, een van de meest vereerde Mariabeelden van Andalusië.",
@@ -802,7 +778,6 @@
       "name": "Torre del Oro",
       "city": "sevilla",
       "date": "2026-09-08",
-      "icon": "fortress",
       "photo": null,
       "facts": [
         "13e-eeuwse wachttoren aan de Guadalquivir, gebouwd om de rivier en scheepvaart naar Sevilla te bewaken.",
@@ -815,7 +790,6 @@
       "name": "Alcazaba de Málaga",
       "city": "malaga",
       "date": "2026-09-13",
-      "icon": "fortress",
       "photo": null,
       "facts": [
         "Moors fort-paleis uit de 11e eeuw, gebouwd op de fundamenten van een eerdere Romeinse vesting.",
@@ -828,7 +802,6 @@
       "name": "Teatro Romano",
       "city": "malaga",
       "date": "2026-09-10",
-      "icon": "culture",
       "photo": null,
       "facts": [
         "Romeins theater uit de 1e eeuw v.Chr., pas in 1951 herontdekt tijdens bouwwerkzaamheden.",
@@ -841,7 +814,6 @@
       "name": "Castillo de Gibralfaro",
       "city": "malaga",
       "date": "2026-09-11",
-      "icon": "fortress",
       "photo": null,
       "facts": [
         "Militair fort uit de 14e eeuw, gebouwd door de Moorse heersers om de Alcazaba en de haven te beschermen.",
@@ -854,7 +826,6 @@
       "name": "Caminito del Rey",
       "city": "malaga",
       "date": "2026-09-12",
-      "icon": "nature",
       "photo": null,
       "facts": [
         "Oorspronkelijk gebouwd in 1905 als looppad voor arbeiders van een waterkrachtcentrale, hoog langs de wanden van de Gaitanes-kloof.",
@@ -867,7 +838,6 @@
       "name": "Catedral de Málaga",
       "city": "malaga",
       "date": "2026-09-10",
-      "icon": "church",
       "photo": null,
       "facts": [
         "Bekend als \"La Manquita\" (de eenarmige) omdat de zuidertoren nooit is afgebouwd — geldgebrek, deels omdat het geld naar de Amerikaanse Onafhankelijkheidsoorlog ging.",
@@ -878,7 +848,7 @@
   ],
   "tickets": {
     "note": "Alle bedragen voor 2 personen. Gecontroleerd op de officiële sites, 6 augustus 2026.",
-    "footnote": "⚠️ Prijzen met ± zijn niet eenduidig te verifiëren — bel Casa de Pilatos (+34 954 225 298) en check San Nicolás ter plaatse.",
+    "footnote": "⚠️ Prijzen met ± zijn niet eenduidig te verifiëren — bel Casa de Pilatos (+34 954 225 298) en check San Nicolás ter plaatse. Koop alleen bij de sites hierboven — parkguelltickets.tours, casabatllotickets.com en vergelijkbare doorverkopers rekenen 30–50% meer.",
     "rows": [
       { "name": "Park Güell", "price": "€ 36", "free": "geen gratis moment", "booking": "ja, 4–6 weken", "site": "parkguell.barcelona" },
       { "name": "Casa Batlló", "price": "€ 58–90", "free": "geen", "booking": "ja, prijs stijgt", "site": "casabatllo.es" },
@@ -908,15 +878,6 @@
       { "name": "Park Güell", "when": "Half augustus", "note": "Eerste tijdvak 09:30 op maandag 31 augustus.", "done": false },
       { "name": "Catedral de Sevilla, gratis zondag", "when": "Rond 30 augustus", "note": "Wordt wekelijks vrijgegeven en is snel vol.", "done": false },
       { "name": "El Caminito del Rey", "when": "Gedaan ✓", "note": "Geboekt voor zaterdag 12 september.", "done": true }
-    ]
-  },
-  "warnings": {
-    "note": "Neptickets, reserveringen en wat nog te checken is.",
-    "closing": "Goede reis.",
-    "items": [
-      { "title": "Neptickets en doorverkopers", "text": "Sites als parkguelltickets.tours, casabatllotickets.com, seville-cathedral.co en casadepilatos.com lijken officieel maar zijn het niet. Ze rekenen 30–50% meer. Alleen de adressen uit de tickettabel gebruiken." },
-      { "title": "Gratis betekent niet zonder reservering", "text": "Het Real Alcázar, Casa de Pilatos en de kathedraal van Sevilla vragen ook voor een gratis bezoek een reservering — en die slots zijn binnen minuten weg." },
-      { "title": "Nog zelf na te checken", "text": "De prijs van Casa de Pilatos (bel +34 954 225 298), de begintijd van het gratis Alcázar-slot in september, de treintijden naar El Chorro, de laatste bus terug uit de botanische tuin, en of de bezorgde restaurant- en baradressen nog actueel zijn." }
     ]
   }
 }

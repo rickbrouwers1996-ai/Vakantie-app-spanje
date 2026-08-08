@@ -499,17 +499,6 @@ button { font: inherit; }
 .dinner-tip-link { display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--teal-800); margin-top: 8px; }
 @media (prefers-color-scheme: dark) { .dinner-tip-link { color: var(--sand); } }
 
-.warning-card {
-  background: rgba(196, 84, 55, 0.07);
-  border: 1px solid rgba(196, 84, 55, 0.18);
-  border-radius: 14px;
-  padding: 15px 16px;
-  margin-bottom: 12px;
-}
-.warning-card h3 { margin: 0 0 6px; font-size: 14.5px; color: var(--terracotta-dark); }
-@media (prefers-color-scheme: dark) { .warning-card h3 { color: #e88a6b; } }
-.warning-card p { margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.55; }
-
 .scenario-card {
   background: var(--surface);
   border: 1px solid var(--border);

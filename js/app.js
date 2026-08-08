@@ -60,7 +60,7 @@
     }
     const origin = encodeURIComponent(places[0]);
     const rest = places.slice(1).map(encodeURIComponent).join("+to:");
-    return `https://www.google.com/maps?saddr=${origin}&daddr=${rest}&output=embed`;
+    return `https://www.google.com/maps?saddr=${origin}&daddr=${rest}&dirflg=w&output=embed`;
   }
 
   function mapsOpenUrl(places) {
@@ -218,7 +218,7 @@
     return `
       ${header({ title: "Eten & drinken", sub: "Ontbijt, borrel en diner rond elk hotel", plain: true })}
       <section class="section" style="padding-top:18px;">
-        <p class="section-desc">Sfeerillustraties per categorie — geen foto's van de zaken zelf, wel echte adressen op basis van actuele lokale aanbevelingen. Check openingstijden vooraf.</p>
+        <p class="section-desc">Check openingstijden vooraf — vooral bakkerijen sluiten vaak vroeg in de middag.</p>
       </section>
       ${cities.map((c) => `
         <section class="section eten-city-section" id="stad-${c.id}" style="padding-top:6px;">
@@ -232,22 +232,12 @@
     `;
   }
 
-  const HIGHLIGHT_ICON_IMG = {
-    church: "images/highlights/church.png",
-    gaudi: "images/highlights/gaudi.png",
-    fortress: "images/highlights/fortress.png",
-    plaza: "images/highlights/plaza.png",
-    water: "images/highlights/water.png",
-    nature: "images/highlights/nature.png",
-    culture: "images/highlights/culture.png",
-  };
-
   function viewHighlights() {
     const cities = [...DATA.cities].sort((a, b) => a.order - b.order);
     return `
       ${header({ title: "Highlights", sub: `${DATA.highlights.length} bezienswaardigheden met achtergrondverhaal`, plain: true })}
       <section class="section" style="padding-top:18px;">
-        <p class="section-desc">Een paar weetjes bij elke grote stop. De foto's zijn — net als bij Eten &amp; drinken — sfeerillustraties per type bezienswaardigheid, geen echte foto's van de plek zelf.</p>
+        <p class="section-desc">Een paar weetjes bij elke grote stop onderweg.</p>
       </section>
       ${cities.map((c) => {
         const items = DATA.highlights.filter((h) => h.city === c.id);
@@ -262,7 +252,7 @@
   }
 
   function highlightCard(h) {
-    const img = h.photo || HIGHLIGHT_ICON_IMG[h.icon] || HIGHLIGHT_ICON_IMG.plaza;
+    const img = h.photo || `images/highlights/${h.id}.png`;
     const day = dayById(h.date);
     return `
       <div class="highlight-card">
@@ -395,7 +385,7 @@
         </div>
       </div>` : ""}
 
-      <p class="footnote">Kaart is een indicatie op basis van de genoemde plekken — check actuele reistijden in Google Maps zelf. Restaurant- en baradressen zijn aanbevelingen op basis van recente lokale bronnen, geen persoonlijke bezoeken — check openingstijden vooraf.</p>
+      <p class="footnote">Check actuele reistijden en openingstijden in Google Maps.</p>
     `;
   }
 
@@ -459,22 +449,6 @@
     `;
   }
 
-  function viewTips() {
-    const w = DATA.warnings;
-    return `
-      ${header({ title: "Let op", sub: w.note, plain: true })}
-      <section class="section" style="padding-top:18px;">
-        ${w.items.map((it) => `
-          <div class="warning-card">
-            <h3>${esc(it.title)}</h3>
-            <p>${esc(it.text)}</p>
-          </div>
-        `).join("")}
-        <p class="section-desc" style="text-align:center; font-weight:700; margin-top:10px;">${esc(w.closing)}</p>
-      </section>
-    `;
-  }
-
   function viewNotFound() {
     return `${header({ title: "Niet gevonden", back: "#/" })}<div class="empty-state">Deze pagina bestaat niet.</div>`;
   }
@@ -518,9 +492,6 @@
         break;
       case "tickets":
         html = viewTickets();
-        break;
-      case "tips":
-        html = viewTips();
         break;
       default:
         html = viewNotFound();
