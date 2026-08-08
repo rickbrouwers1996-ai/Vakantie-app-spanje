@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "title": "Spanje 2026",
+    "subtitle": "Barcelona · Valencia · Sevilla · Málaga",
+    "dateRangeLabel": "30 augustus t/m 15 september 2026",
+    "startDate": "2026-08-30",
+    "endDate": "2026-09-15",
+    "people": 2,
+    "stats": { "days": 17, "cities": 4, "freeMoments": 5, "saved": "€ 111" },
+    "pricesCheckedNote": "Prijzen gecontroleerd op officiële websites, 6 augustus 2026",
+    "routeIntro": "Drie treinen, vier steden, één route van noordoost naar zuid."
+  },
+  "cities": [
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "order": 1,
+      "nights": 4,
+      "dateRangeLabel": "zondag 30 augustus — donderdag 3 september",
+      "priceRange": "€ 157–189",
+      "highlightsSummary": "Park Güell, Casa Vicens, Casa Batlló, Sagrada Família",
+      "note": "Font Màgica alleen wo t/m zo",
+      "description": "Vier dagen, elk met een eigen wijk. Zondagavond de Eixample, maandag Gràcia en Tibidabo, dinsdag El Born en de haven, woensdag de oude stad, Passeig de Gràcia en Montjuïc. Dinsdag is bewust licht gehouden — tussen de lange maandag en de volle woensdag in.",
+      "days": ["2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02"]
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "order": 2,
+      "nights": 3,
+      "dateRangeLabel": "donderdag 3 — zondag 6 september",
+      "priceRange": "€ 113–128",
+      "highlightsSummary": "El Carmen, kathedraal, Oceanogràfic",
+      "note": "Zaterdag: strand én Oceanogràfic",
+      "description": "Drie dagen, drie zones. Donderdagmiddag alleen wat rond het station ligt, vrijdag de complete oude stad binnen anderhalve kilometer, zaterdag de kust en de Ciutat de les Arts. Die laatste dag is de langste van de hele reis.",
+      "days": ["2026-09-03", "2026-09-04", "2026-09-05"]
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "order": 3,
+      "nights": 4,
+      "dateRangeLabel": "zondag 6 — donderdag 10 september",
+      "priceRange": "€ 20",
+      "highlightsSummary": "Alcázar, kathedraal, Casa de Pilatos",
+      "note": "€ 81 aan gratis toegang",
+      "description": "Hier zit het grootste voordeel van de hele reis. Zondagmiddag is de kathedraal gratis, en maandag zijn Casa de Pilatos én het Real Alcázar gratis. Alle drie vragen wél een reservering.",
+      "days": ["2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09"]
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "order": 4,
+      "nights": 5,
+      "dateRangeLabel": "donderdag 10 — dinsdag 15 september",
+      "priceRange": "€ 25",
+      "highlightsSummary": "Caminito del Rey, Alcazaba, twee stranddagen",
+      "note": "Alcazaba gratis, zondag 14:00",
+      "description": "Twee stranddagen, en twee vaste ankers: het Caminito del Rey op zaterdag — al geboekt — en de gratis zondag voor de Alcazaba en de botanische tuin. Vrijdag ligt de Malagueta om de hoek, maandag gaan jullie oostwaarts naar Pedregalejo en El Palo.",
+      "days": ["2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13", "2026-09-14"]
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-08-30",
+      "weekday": "Zondag",
+      "displayDate": "Zondag 30 augustus",
+      "city": "barcelona",
+      "title": "Aankomstavond: Sant Pau & Sagrada Família",
+      "distance": "± 2,5 km te voet",
+      "cost": "€ 0",
+      "stops": [
+        { "time": "15:00", "name": "Aankomst BCN, naar de stad", "detail": "R2 Nord of Aerobús · inchecken en even bijkomen", "place": "Aeroport de Barcelona–El Prat", "transit": true },
+        { "time": "18:00", "name": "Metro L5 naar Sant Pau | Dos de Maig", "detail": "Vijf minuten lopen naar het terrein", "place": "Sant Pau | Dos de Maig, Barcelona" },
+        { "time": "18:15", "name": "Hospital de Sant Pau, buitenkant", "detail": "Gratis vanaf de laan · grootste jugendstilcomplex ter wereld", "place": "Hospital de Sant Pau, Barcelona" },
+        { "time": "19:00", "name": "Avinguda Gaudí naar de Sagrada Família", "detail": "800 m rechte laan, aangelegd als zichtas tussen beide", "place": "Avinguda Gaudí, Barcelona" },
+        { "time": "19:30", "name": "Sagrada Família, Passiegevel", "detail": "Zuidwestkant — daar staat de avondzon vol op", "place": "Sagrada Família, Barcelona" },
+        { "time": "20:30", "name": "Plaça de Gaudí, vijver bij blauw uur", "detail": "Zonsondergang ± 20:25 · daarna eten in de Eixample", "place": "Plaça de Gaudí, Barcelona" }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "weekday": "Maandag",
+      "displayDate": "Maandag 31 augustus",
+      "city": "barcelona",
+      "title": "Park Güell, Casa Vicens & Tibidabo",
+      "distance": "± 5 km te voet",
+      "cost": "± € 104",
+      "stops": [
+        { "time": "09:00", "name": "Metro L3 naar Lesseps", "detail": "15 minuten klimmen — doe dit vóór de hitte", "place": "Lesseps, Barcelona" },
+        { "time": "09:30", "name": "Park Güell, monumentale zone", "detail": "€ 36 · inclusief het gratis parkdeel en Turó de les Tres Creus", "place": "Park Güell, Barcelona" },
+        { "time": "11:30", "name": "Casa Vicens", "detail": "€ 36 ⚠️ · Gaudí's eerste huis, 900 m bergafwaarts", "place": "Casa Vicens, Barcelona" },
+        { "time": "13:00", "name": "Lunch en siësta op Plaça del Sol", "detail": "Hart van Gràcia, veel schaduw", "place": "Plaça del Sol, Barcelona" },
+        { "time": "15:45", "name": "FGC vanaf Gràcia, dan bus 196", "detail": "± € 5 · ongeveer 45 minuten tot Plaça Doctor Andreu", "place": "Plaça Doctor Andreu, Barcelona" },
+        { "time": "17:00", "name": "Funiculaire & Panoramische Zone", "detail": "€ 27 · uitzichtpunt gratis ⚠️ pretpark is maandag dicht", "place": "Tibidabo, Barcelona" },
+        { "time": "19:30", "name": "Afdalen, avondeten in Gràcia", "detail": "Zonsondergang ± 20:23 ⚠️ check vooraf de laatste funiculaire", "place": "Gràcia, Barcelona" }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "weekday": "Dinsdag",
+      "displayDate": "Dinsdag 1 september",
+      "city": "barcelona",
+      "title": "Palau de la Música, Ciutadella & Port Vell",
+      "distance": "± 5 km te voet",
+      "cost": "€ 0",
+      "stops": [
+        { "time": "10:00", "name": "Palau de la Música, buitenkant", "detail": "Gratis · rondleiding binnen kost ± € 24 p.p. samen met Sant Pau", "place": "Palau de la Música Catalana, Barcelona" },
+        { "time": "10:45", "name": "El Born & Passeig del Born", "detail": "Steegjes en pleintjes; Santa Maria del Mar is gratis", "place": "El Born, Barcelona" },
+        { "time": "12:00", "name": "Arc de Triomf", "detail": "Gratis · brede promenade met schaduw", "place": "Arc de Triomf, Barcelona" },
+        { "time": "13:00", "name": "Lunch, daarna siësta", "detail": "Bewust een rustige dag tussen maandag en woensdag in", "place": "El Born, Barcelona" },
+        { "time": "17:30", "name": "Parc de la Ciutadella", "detail": "Schaduwrijk laat in de middag, gratis", "place": "Parc de la Ciutadella, Barcelona" },
+        { "time": "19:00", "name": "Port Vell & Rambla de Mar", "detail": "Zonsondergang aan het water", "place": "Port Vell, Barcelona" }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "weekday": "Woensdag",
+      "displayDate": "Woensdag 2 september",
+      "city": "barcelona",
+      "title": "Barri Gòtic, Passeig de Gràcia & Montjuïc",
+      "distance": "± 7 km, metro L3",
+      "cost": "€ 58 – 90",
+      "stops": [
+        { "time": "09:30", "name": "Barri Gòtic", "detail": "Catedral, Plaça del Rei en Sant Felip Neri; smalle straten = schaduw", "place": "Barri Gòtic, Barcelona" },
+        { "time": "11:30", "name": "La Rambla & Mercat de la Boqueria", "detail": "Woensdag open · onderweg passeren jullie Palau Güell", "place": "Mercat de la Boqueria, Barcelona" },
+        { "time": "13:00", "name": "Lunch en middagrust", "detail": "De heetste uren binnen doorbrengen", "place": "La Rambla, Barcelona" },
+        { "time": "16:00", "name": "Casa Batlló", "detail": "€ 58–90 · geboekt slot · metro L3 naar Passeig de Gràcia", "place": "Casa Batlló, Barcelona" },
+        { "time": "17:45", "name": "La Pedrera & Passeig de Gràcia", "detail": "Alleen buitenkant, gratis · 400 m verder de straat op", "place": "La Pedrera, Barcelona" },
+        { "time": "19:00", "name": "Metro L3 naar Espanya, MNAC-trappen", "detail": "Het beste stadszicht bij zonsondergang — gratis", "place": "MNAC, Barcelona" },
+        { "time": "20:15", "name": "Poble-sec, daarna Font Màgica 21:30", "detail": "Carrer de Blai · fontein gratis, alleen wo t/m zo", "place": "Font Màgica de Montjuïc, Barcelona" }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "weekday": "Donderdag",
+      "displayDate": "Donderdag 3 september",
+      "city": "valencia",
+      "title": "Aankomst: rond het station",
+      "distance": "± 2 km te voet",
+      "cost": "€ 0",
+      "stops": [
+        { "time": "11:05", "name": "Trein Barcelona Sants → Valencia", "detail": "Aankomst Estació del Nord om 14:32", "place": "Barcelona Sants, Barcelona", "transit": true },
+        { "time": "15:15", "name": "Plaça de Bous, buitenkant", "detail": "De arena staat letterlijk naast het station", "place": "Plaza de Toros de Valencia" },
+        { "time": "16:00", "name": "Inchecken en rust", "detail": "Het heetste uur van de dag", "place": "Valencia centrum" },
+        { "time": "18:00", "name": "Plaça de l'Ajuntament", "detail": "Het bestuurlijke hart van de stad, gratis", "place": "Plaza del Ayuntamiento, Valencia" },
+        { "time": "19:30", "name": "Avond op en rond het plein", "detail": "Atenea Sky ligt om de hoek ⚠️ ± € 10–12 p.p. entree, reserveren", "place": "Atenea Sky, Valencia" }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "weekday": "Vrijdag",
+      "displayDate": "Vrijdag 4 september",
+      "city": "valencia",
+      "title": "De complete oude stad",
+      "distance": "± 5 km te voet",
+      "cost": "± € 20",
+      "stops": [
+        { "time": "09:30", "name": "Porta dels Serrans, buitenkant", "detail": "De best bewaarde stadspoort van Valencia", "place": "Torres de Serranos, Valencia" },
+        { "time": "10:00", "name": "Portal de la Valldigna & El Carme", "detail": "Steegjes, street art en gevels", "place": "El Carmen, Valencia" },
+        { "time": "11:00", "name": "Parròquia de Sant Nicolau", "detail": "± € 20 · audiogids en lichtshow inbegrepen ⚠️ prijs checken", "place": "Iglesia de San Nicolás de Bari, Valencia" },
+        { "time": "12:15", "name": "La Seu, buitenkant", "detail": "Plaça de la Reina en de Miguelete-toren erboven", "place": "Valencia Cathedral" },
+        { "time": "13:00", "name": "Llotja de la Seda & Mercat Central", "detail": "Markt sluit om 15:00 en is zondag dicht — nu dus", "place": "Mercado Central de Valencia" },
+        { "time": "14:30", "name": "Lunch en siësta", "detail": "De heetste uren binnen doorbrengen", "place": "Ciutat Vella, Valencia" },
+        { "time": "18:30", "name": "Jardí del Túria", "detail": "Verzonken park in de oude rivierbedding, veel schaduw", "place": "Jardín del Turia, Valencia" }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "weekday": "Zaterdag",
+      "displayDate": "Zaterdag 5 september",
+      "city": "valencia",
+      "title": "El Cabanyal & Ciutat de les Arts",
+      "distance": "± 6 km, langste dag van de reis",
+      "cost": "€ 93 – 108",
+      "stops": [
+        { "time": "09:00", "name": "Tram naar El Cabanyal", "detail": "Oude vissersbuurt met betegelde gevels", "place": "El Cabanyal, Valencia" },
+        { "time": "10:00", "name": "Playa de la Malvarrosa", "detail": "Ochtendzwem vóór de hitte", "place": "Playa de la Malvarrosa, Valencia" },
+        { "time": "12:00", "name": "Vroege paella aan zee", "detail": "La Pepica aan het strand of Casa Montaña in El Cabanyal", "place": "Restaurante La Pepica, Valencia" },
+        { "time": "13:30", "name": "Bus naar de Ciutat de les Arts", "detail": "± 20 minuten dwars door de stad", "place": "Ciudad de las Artes y las Ciencias, Valencia" },
+        { "time": "14:00", "name": "Museu de les Ciències", "detail": "Interactief; reken op twee uur", "place": "Museu de les Ciències Príncipe Felipe, Valencia" },
+        { "time": "16:15", "name": "Hemisfèric, IMAX-koepel", "detail": "Film van 45 min · laatkomers worden niet toegelaten", "place": "L'Hemisfèric, Valencia" },
+        { "time": "17:15", "name": "Oceanogràfic, daarna blauw uur", "detail": "Vier uur ⚠️ check de sluitingstijd vóórdat je boekt", "place": "Oceanogràfic Valencia" }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "weekday": "Zondag",
+      "displayDate": "Zondag 6 september",
+      "city": "sevilla",
+      "title": "Aankomst + kathedraal gratis",
+      "distance": "± 3 km te voet",
+      "cost": "€ 0  (i.p.v. € 26)",
+      "stops": [
+        { "time": "09:15", "name": "Trein Valencia → Sevilla", "detail": "Aankomst Santa Justa om 13:35, daarna inchecken", "place": "Estació del Nord, Valencia", "transit": true },
+        { "time": "15:15", "name": "Plaza del Triunfo & Patio de Banderas", "detail": "Gratis, en meteen het mooiste plein", "place": "Plaza del Triunfo, Sevilla" },
+        { "time": "16:00", "name": "Aansluiten bij de Puerta del Lagarto", "detail": "Kom twintig minuten vroeg — het loopt vol", "place": "Puerta del Lagarto, Catedral de Sevilla" },
+        { "time": "16:30", "name": "Catedral + Giralda — GRATIS", "detail": "Giralda eerst; die heeft een eigen toegangscontrole", "place": "Catedral de Sevilla" },
+        { "time": "18:15", "name": "Jardines de Murillo", "detail": "Schaduw en fonteinen, gratis", "place": "Jardines de Murillo, Sevilla" },
+        { "time": "19:00", "name": "Barrio de Santa Cruz", "detail": "Avondeten in de voormalige Joodse wijk", "place": "Barrio Santa Cruz, Sevilla" }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "weekday": "Maandag",
+      "displayDate": "Maandag 7 september",
+      "city": "sevilla",
+      "title": "Dé gratis dag",
+      "distance": "± 6 km te voet",
+      "cost": "€ 0  (i.p.v. € 55)",
+      "stops": [
+        { "time": "09:30", "name": "Basílica de la Macarena", "detail": "Basiliek gratis; het museum (€ 5 p.p.) is optioneel", "place": "Basílica de la Macarena, Sevilla" },
+        { "time": "10:45", "name": "Palacio de las Dueñas, buitenkant", "detail": "Ligt precies op de route · van buiten zie je vooral de poort en de muur", "place": "Palacio de las Dueñas, Sevilla" },
+        { "time": "11:30", "name": "Setas de Sevilla, buitenkant", "detail": "Van onderaf gratis", "place": "Metropol Parasol, Sevilla" },
+        { "time": "12:00", "name": "Lunch en lange siësta", "detail": "Nu écht binnen blijven", "place": "Sevilla centrum" },
+        { "time": "15:00", "name": "Casa de Pilatos — GRATIS", "detail": "Paspoort mee; reservering sinds okt. 2025 verplicht", "place": "Casa de Pilatos, Sevilla" },
+        { "time": "17:00", "name": "Wandelen naar het Alcázar", "detail": "900 meter, schaduwzijde van de straat", "place": "Real Alcázar de Sevilla" },
+        { "time": "18:00", "name": "Real Alcázar — GRATIS", "detail": "Eén uur: eerst de Mudéjar-paleizen, dan de tuinen", "place": "Real Alcázar de Sevilla" }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "weekday": "Dinsdag",
+      "displayDate": "Dinsdag 8 september",
+      "city": "sevilla",
+      "title": "Parken & rivier",
+      "distance": "± 7 km te voet",
+      "cost": "€ 20",
+      "stops": [
+        { "time": "09:00", "name": "Plaza de España", "detail": "Vroeg is het leeg en het licht zacht", "place": "Plaza de España, Sevilla" },
+        { "time": "10:30", "name": "Parque María Luisa", "detail": "Schaduw, banken en fonteinen — gratis", "place": "Parque de María Luisa, Sevilla" },
+        { "time": "12:30", "name": "Lunch en siësta", "detail": "", "place": "Sevilla centrum" },
+        { "time": "17:00", "name": "Torre del Oro, buitenkant", "detail": "Aan de Paseo de Colón", "place": "Torre del Oro, Sevilla" },
+        { "time": "17:45", "name": "Plaza de Toros de la Real Maestranza", "detail": "€ 20 · laatste toegang ruim vóór 19:30", "place": "Plaza de Toros de la Real Maestranza, Sevilla" },
+        { "time": "19:30", "name": "Guadalquivir-oever", "detail": "Zonsondergang over het water", "place": "Puente de Triana, Sevilla" }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "weekday": "Woensdag",
+      "displayDate": "Woensdag 9 september",
+      "city": "sevilla",
+      "title": "Barrio de Triana",
+      "distance": "± 5 km te voet",
+      "cost": "€ 0",
+      "stops": [
+        { "time": "09:30", "name": "Puente de Isabel II naar Triana", "detail": "De oversteek over de Guadalquivir is het halve plezier", "place": "Puente de Isabel II, Sevilla" },
+        { "time": "10:15", "name": "Mercado de Triana", "detail": "Gebouwd op de resten van een kasteel; gratis rondlopen", "place": "Mercado de Triana, Sevilla" },
+        { "time": "11:00", "name": "Calle San Jacinto & keramiekwinkels", "detail": "De winkelstraat van de wijk, azulejos uit eigen ateliers", "place": "Calle San Jacinto, Sevilla" },
+        { "time": "12:00", "name": "Calle Betis", "detail": "Gekleurde gevels aan het water, beste blik terug op de stad", "place": "Calle Betis, Sevilla" },
+        { "time": "13:00", "name": "Lunch in Triana, daarna siësta", "detail": "De middag is reserve voor een gemist gratis tijdslot", "place": "Triana, Sevilla" },
+        { "time": "20:00", "name": "Setas bij avondlicht", "detail": "Van onderaf bekeken, gratis", "place": "Metropol Parasol, Sevilla" }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "weekday": "Donderdag",
+      "displayDate": "Donderdag 10 september",
+      "city": "malaga",
+      "title": "Trein uit Sevilla + centrum en haven",
+      "distance": "± 4 km te voet",
+      "cost": "€ 0",
+      "stops": [
+        { "time": "10:37", "name": "Trein Sevilla → Málaga", "detail": "Overstap in Córdoba; aankomst 12:42", "place": "Sevilla Santa Justa, Sevilla", "transit": true },
+        { "time": "14:00", "name": "Inchecken, lunch en rust", "detail": "", "place": "Málaga centrum" },
+        { "time": "17:00", "name": "Catedral buitenkant & Calle Larios", "detail": "Via de Plaza de la Constitución", "place": "Catedral de Málaga" },
+        { "time": "18:00", "name": "Teatro Romano", "detail": "Vrij te bekijken vanaf het plein, gratis", "place": "Teatro Romano de Málaga" },
+        { "time": "19:00", "name": "Muelle Uno & La Farola", "detail": "Avondwandeling langs het water", "place": "Muelle Uno, Málaga" }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "weekday": "Vrijdag",
+      "displayDate": "Vrijdag 11 september",
+      "city": "malaga",
+      "title": "Stranddag 1: Malagueta & Gibralfaro",
+      "distance": "± 6 km te voet",
+      "cost": "€ 0",
+      "stops": [
+        { "time": "09:30", "name": "Playa de la Malagueta", "detail": "Ochtendzwem, vlak bij het centrum", "place": "Playa de la Malagueta, Málaga" },
+        { "time": "12:00", "name": "Palmeral de las Sorpresas & Muelle Uno", "detail": "Schaduw langs de kade", "place": "Palmeral de las Sorpresas, Málaga" },
+        { "time": "13:00", "name": "Strandlunch en siësta", "detail": "Chiringuito aan zee; rustig aan, morgen is de lange dag", "place": "Playa de la Malagueta, Málaga" },
+        { "time": "17:30", "name": "Paseo Don Juan de Temboury", "detail": "Klim van ± 30 minuten, stevig maar de moeite waard", "place": "Paseo Don Juan Temboury, Málaga" },
+        { "time": "18:30", "name": "Mirador de Gibralfaro", "detail": "Uitzichtpunt gratis; kasteel binnen kost € 7 p.p.", "place": "Castillo de Gibralfaro, Málaga" },
+        { "time": "20:00", "name": "Terug naar het centrum", "detail": "Avondeten in de oude stad", "place": "Málaga centrum" }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "weekday": "Zaterdag",
+      "displayDate": "Zaterdag 12 september",
+      "city": "malaga",
+      "title": "El Caminito del Rey — al geboekt",
+      "distance": "hele dag, ± 9 uur",
+      "cost": "€ 5 + trein",
+      "stops": [
+        { "time": "± 07:45", "name": "Trein María Zambrano → El Chorro", "detail": "± € 18 retour voor twee ⚠️ tijden checken op renfe.com", "place": "Málaga María Zambrano, Málaga", "transit": true },
+        { "time": "± 08:50", "name": "Aankomst station El Chorro", "detail": "Let op: dit is het éínde van de route, niet het begin", "place": "Estación de El Chorro" },
+        { "time": "09:00", "name": "Pendelbus naar de noordingang", "detail": "€ 5 voor twee · ± 30 min; contant kan bij de chauffeur", "place": "Caminito del Rey acceso Norte" },
+        { "time": "10:00", "name": "El Caminito del Rey", "detail": "Al geboekt · 7,7 km, 3–4 uur, helm verplicht", "place": "Caminito del Rey" },
+        { "time": "14:00", "name": "Voladizo, hangbrug en afdaling", "detail": "Eindigt bij de zuidingang; eten bij het station", "place": "Caminito del Rey acceso Sur" },
+        { "time": "± 17:00", "name": "Trein terug naar Málaga", "detail": "Slechts twee retourslots per dag — mis hem niet", "place": "Estación de El Chorro", "transit": true }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "weekday": "Zondag",
+      "displayDate": "Zondag 13 september",
+      "city": "malaga",
+      "title": "Twee gratis momenten op één dag",
+      "distance": "± 5 km te voet",
+      "cost": "€ 0  (i.p.v. € 24)",
+      "stops": [
+        { "time": "10:00", "name": "Rustig ontbijt, Soho en centrum", "detail": "Bijkomen van het Caminito", "place": "Soho, Málaga" },
+        { "time": "13:45", "name": "Aansluiten bij de Alcazaba", "detail": "Ga vóór 14:00 staan — dan gaat de gratis toegang in", "place": "Alcazaba de Málaga" },
+        { "time": "14:00", "name": "Alcazaba — GRATIS vanaf 14:00", "detail": "Reken op anderhalf uur; geen reservering nodig", "place": "Alcazaba de Málaga" },
+        { "time": "16:00", "name": "Bus EMT lijn 2 naar Ciudad Jardín", "detail": "± € 5 · daarna nog 15 minuten lopen", "place": "Ciudad Jardín, Málaga" },
+        { "time": "17:00", "name": "Jardín Botánico La Concepción", "detail": "Gratis van 16:30 tot 20:30 ⚠️ laatste bus terug checken", "place": "Jardín Botánico-Histórico La Concepción, Málaga" },
+        { "time": "20:30", "name": "Terug naar het centrum", "detail": "Avondeten", "place": "Málaga centrum" }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "weekday": "Maandag",
+      "displayDate": "Maandag 14 september",
+      "city": "malaga",
+      "title": "Stranddag 2: Pedregalejo & El Palo",
+      "distance": "± 4 km te voet plus bus",
+      "cost": "± € 6 vervoer",
+      "stops": [
+        { "time": "10:00", "name": "Mercado de Atarazanas", "detail": "Ontbijt tussen de marktkramen · alleen 's ochtends open", "place": "Mercado Atarazanas, Málaga" },
+        { "time": "11:30", "name": "Bus 11 naar Pedregalejo", "detail": "± 25 minuten oostwaarts langs de kust", "place": "Pedregalejo, Málaga" },
+        { "time": "12:00", "name": "Playa de Pedregalejo", "detail": "Rustiger dan de Malagueta, met een rij chiringuito's aan het water", "place": "Playa de Pedregalejo, Málaga" },
+        { "time": "14:00", "name": "Espeto de sardinas op het strand", "detail": "Sardines aan een stok boven houtvuur — hier uitgevonden", "place": "Pedregalejo, Málaga" },
+        { "time": "16:30", "name": "Playas del Palo", "detail": "Wandelen langs de vier baaien achter de golfbrekers", "place": "Playa El Palo, Málaga" },
+        { "time": "20:00", "name": "Terug, afscheidsdiner op Muelle Uno", "detail": "Uitzicht op de haven", "place": "Muelle Uno, Málaga" }
+      ]
+    }
+  ],
+  "departure": {
+    "date": "2026-09-15",
+    "weekday": "Dinsdag",
+    "displayDate": "Dinsdag 15 september",
+    "city": "malaga",
+    "title": "Vertrek",
+    "intro": "De vluchttijd is nog onbekend. Drie scenario's, zodat jullie niets hoeven te herplannen.",
+    "footnote": "Van María Zambrano rijdt de Cercanías C-1 rechtstreeks naar de luchthaven.",
+    "scenarios": [
+      {
+        "name": "Ochtendvlucht",
+        "timeLabel": "vóór 12:00",
+        "note": "Dinsdag valt volledig weg",
+        "steps": ["Verplaats het afscheidsdiner naar maandag", "Taxi of Cercanías C-1 naar AGP, ± 12 min"]
+      },
+      {
+        "name": "Middagvlucht",
+        "timeLabel": "rond 12:00 — basisplan",
+        "note": "Zorg dat het Caminito op zaterdag staat, niet later",
+        "steps": ["Ontbijt en korte wandeling langs zee", "Uitchecken rond 09:30", "Cercanías C-1 vanaf María Zambrano", "Twee uur voor vertrek op de luchthaven"]
+      },
+      {
+        "name": "Avondvlucht",
+        "timeLabel": "na 18:00",
+        "note": "Halve extra dag gewonnen",
+        "steps": ["Bagage in de lockers van María Zambrano", "Castillo de Gibralfaro of nog één keer strand", "Rond 16:00 richting AGP"]
+      }
+    ]
+  },
+  "tickets": {
+    "note": "Alle bedragen voor 2 personen. Gecontroleerd op de officiële sites, 6 augustus 2026.",
+    "footnote": "⚠️ Prijzen met ± zijn niet eenduidig te verifiëren — bel Casa de Pilatos (+34 954 225 298) en check San Nicolás ter plaatse.",
+    "rows": [
+      { "name": "Park Güell", "price": "€ 36", "free": "geen gratis moment", "booking": "ja, 4–6 weken", "site": "parkguell.barcelona" },
+      { "name": "Casa Batlló", "price": "€ 58–90", "free": "geen", "booking": "ja, prijs stijgt", "site": "casabatllo.es" },
+      { "name": "Casa Vicens", "price": "€ 36 ⚠️", "free": "geen", "booking": "ja, aanbevolen", "site": "casavicens.org" },
+      { "name": "Font Màgica", "price": "€ 0", "free": "altijd · wo–zo 21:30", "booking": "nee", "site": "—" },
+      { "name": "Tibidabo funiculaire", "price": "€ 27", "free": "Panoramische Zone gratis", "booking": "nee", "site": "tibidabo.cat" },
+      { "name": "San Nicolás, Valencia", "price": "± € 20", "free": "gratis tijdens misuren", "booking": "nee", "site": "sannicolasvalencia.com" },
+      { "name": "Ciudad de las Artes (3 gebouwen)", "price": "€ 93–108 ⚠️", "free": "geen", "booking": "ja, aanbevolen", "site": "tickets.cac.es" },
+      { "name": "Catedral + Giralda", "price": "€ 26", "free": "GRATIS zo 16:30–18:00", "booking": "ja, ook gratis", "site": "catedraldesevilla.servitickets.es" },
+      { "name": "Real Alcázar", "price": "€ 31", "free": "GRATIS ma 18:00–19:00", "booking": "ja, ± 1 maand", "site": "alcazardesevilla.infoticketing.com" },
+      { "name": "Casa de Pilatos", "price": "± € 24", "free": "GRATIS ma vanaf 15:00", "booking": "ja, ± 1 maand", "site": "shop.articketing.com" },
+      { "name": "Plaza de Toros Maestranza", "price": "€ 20", "free": "geen", "booking": "nee", "site": "realmaestranza.com" },
+      { "name": "Palacio de las Dueñas", "price": "€ 30", "free": "GRATIS ma vanaf 16:00", "booking": "nee, kassa 50 p/uur", "site": "palacioduenas.janto.es" },
+      { "name": "Alcazaba + Gibralfaro", "price": "€ 20", "free": "GRATIS zo vanaf 14:00", "booking": "nee", "site": "alcazabaygibralfaro.malaga.eu" },
+      { "name": "Jardín Botánico", "price": "€ 10,40", "free": "GRATIS zo 16:30–20:30", "booking": "kan niet online", "site": "alleen kassa" },
+      { "name": "Caminito del Rey + pendelbus", "price": "€ 25", "free": "geen", "booking": "AL GEBOEKT", "site": "caminitodelrey.info" },
+      { "name": "Alle \"alleen buitenkant\"-stops", "price": "€ 0", "free": "altijd gratis", "booking": "nee", "site": "—" }
+    ]
+  },
+  "booking": {
+    "note": "De gratis tijdslots zijn binnen minuten weg. Zet er een wekker voor.",
+    "footnote": "Gratis toegang blijft een reservering vereisen — bij het Alcázar, Casa de Pilatos én de kathedraal.",
+    "items": [
+      { "name": "Casa Batlló", "when": "Nu meteen", "note": "Dynamische prijs — elke week wachten kost geld.", "done": false },
+      { "name": "Casa de Pilatos", "when": "Rond 7 augustus", "note": "Zodra maandag 7 september binnen het venster van één maand valt.", "done": false },
+      { "name": "Real Alcázar, gratis maandag", "when": "Rond 7 augustus", "note": "Het schaarste slot van de hele reis. Wekker zetten.", "done": false },
+      { "name": "Park Güell", "when": "Half augustus", "note": "Eerste tijdvak 09:30 op maandag 31 augustus.", "done": false },
+      { "name": "Catedral de Sevilla, gratis zondag", "when": "Rond 30 augustus", "note": "Wordt wekelijks vrijgegeven en is snel vol.", "done": false },
+      { "name": "El Caminito del Rey", "when": "Gedaan ✓", "note": "Geboekt voor zaterdag 12 september.", "done": true }
+    ]
+  },
+  "costs": {
+    "note": "Entreegelden voor 2 personen, volgens dit plan.",
+    "totalRange": "€ 315 – 362",
+    "totalLabel": "totale entreegelden — voor 2 personen, hele reis",
+    "saved": "€ 111,40",
+    "savedLabel": "bespaard — door de vijf gratis momenten",
+    "withoutFree": "€ 426",
+    "withoutFreeLabel": "zonder gratis momenten — wat dezelfde reis anders had gekost",
+    "footnote": "Reken daarnaast op ± € 18 trein naar El Chorro en ± € 40–50 lokaal vervoer in vier steden.",
+    "paid": [
+      { "name": "Ciudad de las Artes, Valencia", "price": "€ 93 – 108" },
+      { "name": "Casa Batlló", "price": "€ 58 – 90" },
+      { "name": "Park Güell", "price": "€ 36" },
+      { "name": "Casa Vicens", "price": "€ 36" },
+      { "name": "Tibidabo funiculaire", "price": "€ 27" },
+      { "name": "Caminito del Rey + bus", "price": "€ 25" },
+      { "name": "San Nicolás, Valencia", "price": "± € 20" },
+      { "name": "Plaza de Toros Maestranza", "price": "€ 20" }
+    ],
+    "free": [
+      { "name": "Real Alcázar, Sevilla", "price": "€ 31" },
+      { "name": "Catedral + Giralda, Sevilla", "price": "€ 26" },
+      { "name": "Casa de Pilatos, Sevilla", "price": "€ 24" },
+      { "name": "Alcazaba + Gibralfaro, Málaga", "price": "€ 20" },
+      { "name": "Jardín Botánico, Málaga", "price": "€ 10,40" }
+    ]
+  },
+  "warnings": {
+    "note": "Neptickets, reserveringen en wat nog te checken is.",
+    "closing": "Goede reis.",
+    "items": [
+      { "title": "Neptickets en doorverkopers", "text": "Sites als parkguelltickets.tours, casabatllotickets.com, seville-cathedral.co en casadepilatos.com lijken officieel maar zijn het niet. Ze rekenen 30–50% meer. Alleen de adressen uit de tickettabel gebruiken." },
+      { "title": "Gratis betekent niet zonder reservering", "text": "Het Real Alcázar, Casa de Pilatos en de kathedraal van Sevilla vragen ook voor een gratis bezoek een reservering — en die slots zijn binnen minuten weg." },
+      { "title": "Nog zelf na te checken", "text": "De prijs van Casa de Pilatos (bel +34 954 225 298), de begintijd van het gratis Alcázar-slot in september, de treintijden naar El Chorro en de laatste bus terug uit de botanische tuin." }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Spanje 2026 — Dagplanning",
+  "short_name": "Spanje 2026",
+  "description": "Dag-voor-dag planning voor Barcelona, Valencia, Sevilla en Málaga met highlights en routes.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c2c33",
+  "theme_color": "#123c44",
+  "lang": "nl",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
