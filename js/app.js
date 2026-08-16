@@ -108,6 +108,75 @@
     return { phase: "during", text: "Onderweg vandaag", date: today };
   }
 
+  // ---------------- trains ----------------
+  function allTrains() {
+    const trains = [];
+    DATA.days.forEach((d) => {
+      (d.stops || []).forEach((s) => {
+        if (s.transit && /^trein/i.test(s.name.trim())) {
+          trains.push({ date: d.date, time: s.time, name: s.name, detail: s.detail });
+        }
+      });
+    });
+    return trains.sort((a, b) => a.date === b.date ? a.time.localeCompare(b.time) : a.date.localeCompare(b.date));
+  }
+
+  function parseStopDateTime(dateStr, timeStr) {
+    const clean = timeStr.replace(/[^\d:]/g, "");
+    const [h, m] = clean.split(":").map(Number);
+    const dt = new Date(dateStr + "T00:00:00");
+    dt.setHours(h || 0, m || 0, 0, 0);
+    return dt;
+  }
+
+  function describeCountdown(dt) {
+    const diffMs = dt - new Date();
+    if (diffMs <= 0) return null;
+    const diffMin = Math.round(diffMs / 60000);
+    if (diffMin < 60) return `over ${diffMin} min`;
+    const diffH = diffMs / 3600000;
+    if (diffH < 24) {
+      const h = Math.floor(diffH);
+      const m = Math.round((diffH - h) * 60);
+      return m > 0 ? `over ${h}u ${m}m` : `over ${h} uur`;
+    }
+    const diffDays = Math.ceil(diffH / 24);
+    return `over ${diffDays} ${diffDays === 1 ? "dag" : "dagen"}`;
+  }
+
+  function trainsSection() {
+    const trains = allTrains();
+    if (!trains.length) return "";
+    const today = todayLocalISO();
+    let nextMarked = false;
+    const rows = trains.map((t) => {
+      const dt = parseStopDateTime(t.date, t.time);
+      const isPast = t.date < today || (t.date === today && dt < new Date());
+      const countdown = isPast ? null : describeCountdown(dt);
+      const isNext = !isPast && !nextMarked;
+      if (isNext) nextMarked = true;
+      const title = t.name.replace(/^trein\s*/i, "");
+      return `
+        <a href="#/dag/${t.date}" class="train-row ${isPast ? "is-past" : ""} ${isNext ? "is-next" : ""}">
+          <div class="train-date">
+            <div class="train-date-num">${dayNum(t.date)}</div>
+            <div class="train-date-mon">${esc(shortMonth(t.date))}</div>
+          </div>
+          <div class="train-main">
+            <div class="train-name">🚆 ${esc(title)}</div>
+            <div class="train-detail">${esc(t.time)} · ${esc(t.detail)}</div>
+          </div>
+          ${isPast ? `<div class="train-badge is-past">✓</div>` : isNext && countdown ? `<div class="train-badge is-next">${esc(countdown)}</div>` : ""}
+        </a>`;
+    }).join("");
+    return `
+      <section class="section">
+        <div class="section-title">Treinen</div>
+        <p class="section-desc">${trains.length} geboekte treinen tussen de steden.</p>
+        ${rows}
+      </section>`;
+  }
+
   // ---------------- views ----------------
   function viewHome() {
     const status = tripStatus();
@@ -127,6 +196,7 @@
           <div class="stat-card"><div class="stat-num">${DATA.meta.stats.freeMoments}</div><div class="stat-label">gratis momenten</div></div>
         </div>
       </section>
+      ${trainsSection()}
       <section class="section">
         <div class="section-title">De reis in één oogopslag</div>
         <p class="section-desc">${esc(DATA.meta.routeIntro)}</p>
